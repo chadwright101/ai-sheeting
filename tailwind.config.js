@@ -21,8 +21,18 @@ module.exports = {
       700: "700",
     },
     fontSize: {
-      heading: "2rem",
-      subheading: "1.125rem",
+      heading: [
+        "2rem",
+        {
+          fontWeight: "700",
+        },
+      ],
+      subheading: [
+        "1.125rem",
+        {
+          fontWeight: "600",
+        },
+      ],
       paragraph: "1rem",
     },
     fontFamily: {

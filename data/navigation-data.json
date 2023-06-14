@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Home",
+    "url": "/"
+  },
+  {
+    "title": "About Us",
+    "url": "/#about-us"
+  },
+  {
+    "title": "Services",
+    "url": "/services"
+  },
+  {
+    "title": "Gallery",
+    "url": "/#gallery"
+  },
+  {
+    "title": "Projects",
+    "url": "/projects"
+  },
+  {
+    "title": "Contact Us",
+    "url": "/contact-us"
+  },
+  {
+    "title": "Get A Free Roof Inspection",
+    "url": "/free-quote"
+  }
+]

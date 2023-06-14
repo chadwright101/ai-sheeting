@@ -1,0 +1,166 @@
+{
+  "homePage": {
+    "slogan": "Industrial Roofing & Structural Specialists Focusing on Turnkey Remedial Solutions Nationwide",
+    "aboutUs": [
+      "First established in 1976, with a combined in-house experience of over 100 years,  A&I specialises in providing Industrial roofing solutions. We offer professional assistance in the refurbishment, replacement and redesign of roofing, insulation, cladding, gutters (Steel box gutters and eave gutters), downpipes, ventilation, asbestos removal, waterproofing and coating systems to suit the building as well as its user.",
+      "Based in Johannesburg, however not limited to Gauteng, we provide our clients with the knowledge and information required to ensure the best roofing system for their needs. We aim to achieve professional standards that are on par with global criteria.",
+      "Over the years we have evolved to offer our clientele with far more cost-effective solutions in order to maintain and revitalise their existing assets. We specialise in providing refurbishment solutions to Industrial Warehouses and Factories."
+    ],
+    "whatWeAreAbout": [
+      {
+        "iconUrl": "public/icons/refurbishment.svg",
+        "title": "Refurbishment"
+      },
+      {
+        "iconUrl": "public/icons/waterproofing.svg",
+        "title": "Waterproofing"
+      },
+      {
+        "iconUrl": "public/icons/roofing.svg",
+        "title": "Roofing"
+      },
+      {
+        "iconUrl": "public/icons/gutters.svg",
+        "title": "Gutters"
+      },
+      {
+        "iconUrl": "public/icons/insulation.svg",
+        "title": "Insulation"
+      },
+      {
+        "iconUrl": "public/icons/chromadek.svg",
+        "title": "Chromadek"
+      },
+      {
+        "iconUrl": "public/icons/leaks.svg",
+        "title": "Leaks"
+      },
+      {
+        "iconUrl": "public/icons/industrial-roof-coating.svg",
+        "title": "Industrial Roof Coating"
+      },
+      {
+        "iconUrl": "public/icons/asbestos-removal.svg",
+        "title": "Asbestos removal"
+      }
+    ],
+    "gallery": [
+      "public/projects/118/DJI_0467.jpg",
+      "public/projects/Actom/IMG_5482.jpg",
+      "public/projects/Avenge/DJI_0544.jpg",
+      "public/projects/Avenge 2/DJI_0687.jpg",
+      "public/projects/Brackenfell JT Ross CT/IMG_2141.jpg",
+      "public/projects/Diesel road/DJI_0628.jpg",
+      "public/projects/Douglasdale Shopping Centre/DJI_0334.jpg",
+      "public/projects/Gilwell before and After/example 1/DJI_0289.jpg",
+      "public/projects/JT pics/DJI_0644.jpg",
+      "public/projects/Soweto/DJI_0703.jpg"
+    ],
+    "contactUs": {
+      "phone1": "+27 11 485 1782",
+      "phone2": "+27 11 485 1783",
+      "email": "info@roofrefurb.co.za",
+      "address": "61 Hathorn Avenue, Rouxville, Johannesburg"
+    }
+  },
+  "servicesPage": {
+    "technologies": {
+      "paragraph1": "A&I specialises in/and is an approved contractor for:",
+      "list": [
+        "Conceal fix system roofs (designed for low pitch roofs)",
+        "Saflok Systems",
+        "Kliplok/Kliptite Systems",
+        "Standard metal roofs (IBR, Widespan, Corrugated, Fluteline etc)",
+        "Polycarbonate Sheeting",
+        "Customised Industrial Steel, seam welded, box gutters",
+        "Lastiflex waterproofing",
+        "Insulation (Sisalation, Alububble, FBI, Starlite, Factory board, Lambda board, etc)",
+        "Replacement of Asbestos roofs",
+        "Flat roof waterproofing",
+        "Timber and Steel structure refurbishment",
+        "Steel Structures",
+        "Industrial Wind Clips",
+        "Ventilation/Louvres",
+        "Hopper Box Installation",
+        "Specialised Turn-key Warehouse refurbishment solutions"
+      ],
+      "paragraph2": "In 2011, we completed work on a hot dip galvanising plant that suffered tremendously with a caustic corrosive atmosphere, which meant the existing sheeting was no longer structurally safe. We recommended and installed a product that was not affected by the harmful acids that were expelled by the tanks. This modern solution will provide the client with the peace of mind that the roof will now offer far greater durability and longevity with a life span of between 20-30 years."
+    },
+    "guide": [
+      "Colour One Side (Chromodek)",
+      "Metal Roofing",
+      "Cladding",
+      "IBR Sheeting",
+      "Corrugated Iron Sheeting",
+      "Conceal fix Sheeting for low pitch roofs",
+      "Polycarbonate and GRP Sheeting",
+      "Corrosion Prevention Waterproofing Systems",
+      "Ventilation/Louvers",
+      "Plate Steel Gutters, Free Flow Design, Water Hopper boxes",
+      "Specialised Anti-corrosion Cladding",
+      "AIWC (Specialised wind resistant sheet clips)",
+      "Galvanised Products"
+    ]
+  },
+  "articles": [
+    {
+      "title": "A&I Sheeting - Protecting your biggest asset",
+      "url": ""
+    },
+    {
+      "title": "A note from the roof remedial specialist",
+      "url": ""
+    }
+  ],
+  "projectsPage": {
+    "slider": [
+      {
+        "title": "Worldwear",
+        "paragraph1": "Worldwear shopping centre, just off Beyers Naude, required extensive gutter maintenance in order to maximise the longevity of its water management system. The system that we installed, which was over 2km long of gutters, will vastly improve the lifespan of the gutter. The roofs' general condition was also assessed and addressed to ensure the client received the most professional service.",
+        "paragraph2": "",
+        "paragraph3": "",
+        "imageUrl": ""
+      }
+    ],
+    "testimonials": [
+      {
+        "title": "Roof Technology Services",
+        "paragraph1": "By this letter I state my recommendation of A&I Sheeting Erectors as a reliable and professional roof contracting company. I have had the pleasure of contracting A&I on several occasions over the past five years to undertake sometimes difficult and challenging roof remedial works on behalf of our various clients. A&I has faultlessly completed all such works timeously and to a high standard of workmanship. Two of the most noticable such projects have been works conducted for Monipak (Vulcania, Brakpan and Nelspruit manufacturing facilities) and HHRobertsons in Isando, with a combined project value of over R7 Million.",
+        "paragraph2": "",
+        "client": "David Parkins - Roof Technology Services"
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Is there a need to maintain my roof? If so, why?",
+      "url": "/faqs#question1",
+      "answer": "Yes, the roof of a building is one of a its greatest assets. After all it protects the user’s stock, machinery, employees, etc. New builds can be very costly to a company, and thus the correct maintenance programmes need to be implemented in order to avoid complete replacement. By implementing the correct maintenance programmes for the right building, the life span of that building can be vastly increased."
+    },
+    {
+      "question": "s it more feasible to replace my roof or to refurbish it?",
+      "url": "/faqs#question2",
+      "answer": "The cost to replace a roofing system is generally a very expensive project. In many cases a full replacement is not necessary. There are numerous cost saving options when looking to not only resolve roof leaks but also refurbish an existing building. These options can be tailor made to the client/tenants needs"
+    },
+    {
+      "question": "Is there a green roofing solution?",
+      "url": "/faqs#question3",
+      "answer": "Yes, there are several green, energy reducing options that can be considered when refurbishing an existing warehouse/building. For example, by maximising the natural lighting, insulation and natural ventilation you can vastly decrease your carbon footprint on the earth. A lower carbon footprint also reduces expenses on air conditioning and lighting costs. Therefore, in the long run, being green also means saving money."
+    },
+    {
+      "question": "What is the benefit to having insulation installed in my building?",
+      "url": "/faqs#question4",
+      "answer": "Insulation offers your building reduced heat transfer through sheeting, thereby minimising energy consumption on air-conditioning/cooling. Insulation can help create the ideal ambient temperature inside the building, being cooler in summer, or warmer in winter."
+    },
+    {
+      "question": "Do we provide guarantees?",
+      "url": "/faqs#question5",
+      "answer": "We offer guarantees to suit our clients. This is provided they enter maintenance schedules that we recommend for their buildings. Depending on the location and atmosphere the building is subjected to, will determine how extensive the maintenance plans may be. Without the correct maintenance these guarantees may be limited and the lifespan of a system will shorten exponentially."
+    },
+    {
+      "question": "Do we comply with Health and Safety Regulations?",
+      "url": "/faqs#question6",
+      "answer": "Yes, we have a full-time safety officer who has extensive in-house and certified external training, managing all our sites. We compile in-depth, site specific safety files for every site with all the relevant documentation. Not only do we comply with the Construction Regulations and the Occupational Health and Safety Act, but we aim to set a benchmark or precedent for the standards required for the Industry. Many of our employees have been with us for over 20 years and have been trained in working from heights and fall arrest training. We have complied with companies that have had some of the most stringent safety protocol, such as Eskom, SAB, various mines as well as numerous independent private companies which are audited to first world standards."
+    }
+  ]
+}
