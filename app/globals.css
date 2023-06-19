@@ -54,6 +54,27 @@
     font-display: swap;
     font-style: italic;
   }
+
+  @font-face {
+    font-family: "Ovo";
+    src: url("../fonts/Ovo/Ovo-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Ovo";
+    src: url("../fonts/Ovo/Ovo-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Ovo";
+    src: url("../fonts/Ovo/Ovo-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-display: swap;
+  }
 }
 
 @layer components {
@@ -63,8 +84,11 @@
     font-size: 16px;
     font-weight: 300;
     @apply text-black;
-    background-color: #fff;
     text-align: justify;
+  }
+
+  body {
+    background-color: #fff;
   }
 
   h1,
@@ -72,6 +96,7 @@
     font-size: 2rem;
     font-weight: 700;
     color: #0C50BE;
+    text-align: center;
   }
 
   h3,
