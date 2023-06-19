@@ -8,25 +8,36 @@ module.exports = {
   theme: {
     screens: {
       phone: "425px",
-      tablet: "650px",
-      tabletLarge: "900px",
-      desktopSmall: "1100px",
-      desktop: "1400px",
+      tablet: "800px",
+      tabletLarge: "1000px",
+      desktopSmall: "1200px",
+      desktop: "1450px",
     },
     fontWeight: {
       200: "200",
       300: "300",
-      350: "350",
+      400: "400",
       500: "500",
       700: "700",
     },
     fontSize: {
-      heading: "2rem",
-      subheading: "1.125rem",
+      heading: [
+        "2rem",
+        {
+          fontWeight: "700",
+        },
+      ],
+      subheading: [
+        "1.125rem",
+        {
+          fontWeight: "600",
+        },
+      ],
       paragraph: "1rem",
     },
     fontFamily: {
       Open_Sans: ["Open Sans", "sans-serif"],
+      Ovo: ["Ovo", "serif"],
     },
     colors: {
       blue: "#0C50BE",
@@ -35,7 +46,11 @@ module.exports = {
       white: "#FFFFFF",
       linkBlue: "#3366CC",
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        24: "repeat(24, minmax(0, 1fr))",
+      },
+    },
   },
   plugins: [],
 };
