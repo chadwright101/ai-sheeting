@@ -15,7 +15,7 @@ const {
 const WhatWeAreAbout = ({ cssClasses }: Props) => {
   return (
     <article className={`grid gap-14 ${cssClasses}`}>
-      <h2 className="tabletLarge:text-left">What We're About</h2>
+      <h2 className="tabletLarge:text-left">What We&apos;re About</h2>
       <ImageContainer
         src="/projects/Avenge/DJI_0544.jpg"
         alt="A&I Sheeting - What we're about"
