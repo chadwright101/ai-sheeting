@@ -1,3 +1,5 @@
+"use client";
+
 import { ReactNode } from "react";
 
 import Header from "@/components/navigation/header";
@@ -14,7 +16,9 @@ export default function RootLayout({ children }: Props) {
     <html lang="en">
       <body>
         <Header />
-        <>{children}</>
+        <div className="mx-5 max-w-[1400px] tabletLarge:mx-10 desktop:mx-auto">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

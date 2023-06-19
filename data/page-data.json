@@ -8,53 +8,54 @@
     ],
     "whatWeAreAbout": [
       {
-        "iconUrl": "public/icons/refurbishment.svg",
+        "iconUrl": "/icons/refurbishment.svg",
         "title": "Refurbishment"
       },
       {
-        "iconUrl": "public/icons/waterproofing.svg",
+        "iconUrl": "/icons/waterproofing.svg",
         "title": "Waterproofing"
       },
       {
-        "iconUrl": "public/icons/roofing.svg",
+        "iconUrl": "/icons/roofing.svg",
         "title": "Roofing"
       },
       {
-        "iconUrl": "public/icons/gutters.svg",
+        "iconUrl": "/icons/gutters.svg",
         "title": "Gutters"
       },
       {
-        "iconUrl": "public/icons/insulation.svg",
+        "iconUrl": "/icons/insulation.svg",
         "title": "Insulation"
       },
       {
-        "iconUrl": "public/icons/chromadek.svg",
+        "iconUrl": "/icons/chromadek.svg",
         "title": "Chromadek"
       },
+
       {
-        "iconUrl": "public/icons/leaks.svg",
-        "title": "Leaks"
-      },
-      {
-        "iconUrl": "public/icons/industrial-roof-coating.svg",
+        "iconUrl": "/icons/industrial-roof-coating.svg",
         "title": "Industrial Roof Coating"
       },
       {
-        "iconUrl": "public/icons/asbestos-removal.svg",
+        "iconUrl": "/icons/asbestos-removal.svg",
         "title": "Asbestos removal"
+      },
+      {
+        "iconUrl": "/icons/leaks.svg",
+        "title": "Leaks"
       }
     ],
     "gallery": [
-      "public/projects/118/DJI_0467.jpg",
-      "public/projects/Actom/IMG_5482.jpg",
-      "public/projects/Avenge/DJI_0544.jpg",
-      "public/projects/Avenge 2/DJI_0687.jpg",
-      "public/projects/Brackenfell JT Ross CT/IMG_2141.jpg",
-      "public/projects/Diesel road/DJI_0628.jpg",
-      "public/projects/Douglasdale Shopping Centre/DJI_0334.jpg",
-      "public/projects/Gilwell before and After/example 1/DJI_0289.jpg",
-      "public/projects/JT pics/DJI_0644.jpg",
-      "public/projects/Soweto/DJI_0703.jpg"
+      "/projects/118/DJI_0467.jpg",
+      "/projects/Actom/IMG_5482.jpg",
+      "/projects/Avenge/DJI_0544.jpg",
+      "/projects/Avenge 2/DJI_0687.jpg",
+      "/projects/Brackenfell JT Ross CT/IMG_2141.jpg",
+      "/projects/Diesel road/DJI_0628.jpg",
+      "/projects/Douglasdale Shopping Centre/DJI_0334.jpg",
+      "/projects/Gilwell before and After/example 1/DJI_0289.jpg",
+      "/projects/JT pics/DJI_0644.jpg",
+      "/projects/Soweto/DJI_0703.jpg"
     ],
     "contactUs": {
       "phone1": "+27 11 485 1782",

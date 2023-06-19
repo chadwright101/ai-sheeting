@@ -42,7 +42,7 @@ const ImageContainer = ({
 
   return (
     <Image
-      alt={alt || "Luna Blue Guesthouse"}
+      alt={alt || "A&I Sheeting"}
       src={src}
       width={width}
       height={height}
