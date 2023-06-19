@@ -23,7 +23,7 @@ const WhatWeAreAbout = ({ cssClasses }: Props) => {
         height={250}
         cssClasses="h-[250px] tablet:h-[300px] tabletLarge:h-[230px] object-cover"
       />
-      <ul className="flex flex-wrap gap-y-14 gap-x-8 justify-center mx-auto tabletLarge:gap-y-10 tabletLarge:mx-0 tabletLarge:grid tabletLarge:grid-cols-3 tabletLarge:gap-x-4 desktop:grid-cols-24 desktop:place-items-start">
+      <ul className="flex flex-wrap gap-y-14 gap-x-8 justify-center mx-auto tablet:grid grid-cols-4 tabletLarge:gap-y-10 tabletLarge:mx-0 tabletLarge:grid-cols-3 tabletLarge:gap-x-4 desktop:grid-cols-24 desktop:place-items-start">
         {whatWeAreAbout.map(({ iconUrl, title }, index) => (
           <li
             key={index}
@@ -33,6 +33,7 @@ const WhatWeAreAbout = ({ cssClasses }: Props) => {
                 "order-last": [6, 7].includes(index),
                 "desktop:col-start-4": index === 4,
                 "desktop:col-start-7": index === 6,
+                "tablet:col-span-full tabletLarge:col-auto": index === 7,
               }
             )}
           >

@@ -78,7 +78,7 @@ const MobileHeaderBar = ({ cssClasses }: Props) => {
       {menuToggle && (
         <nav
           ref={ref}
-          className="-mx-5 absolute top-0 h-screen w-full bg-orange phone:w-3/4 tablet:w-3/5 tabletLarge:w-2/5  tabletLarge:hidden"
+          className="-mx-5 fixed top-0 h-screen w-full bg-orange phone:w-3/4 tablet:w-3/5 tabletLarge:w-2/5  tabletLarge:hidden"
         >
           <div
             onClick={() => setMenuToggle(false)}

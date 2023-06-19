@@ -38,8 +38,8 @@ const DesktopHeaderBar = ({ cssClasses }: Props) => {
             >
               <Link
                 href={url}
-                className={`text-white font-[350] ${
-                  index === 6 && "font-500 hover:text-black"
+                className={`text-white ${
+                  index === 6 ? "font-500 hover:text-black" : "font-[325]"
                 }`}
               >
                 {title}

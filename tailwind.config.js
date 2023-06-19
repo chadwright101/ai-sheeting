@@ -8,8 +8,9 @@ module.exports = {
   theme: {
     screens: {
       phone: "425px",
-      tablet: "750px",
-      tabletLarge: "1050px",
+      tablet: "800px",
+      tabletLarge: "1000px",
+      desktopSmall: "1200px",
       desktop: "1450px",
     },
     fontWeight: {

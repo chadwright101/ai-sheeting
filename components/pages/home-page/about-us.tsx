@@ -1,6 +1,7 @@
 import ImageContainer from "@/components/utils/image-container";
 
 import pageData from "../../../data/page-data.json";
+import Button from "@/components/button";
 
 interface Props {
   cssClasses?: string;
@@ -26,6 +27,12 @@ const AboutUs = ({ cssClasses }: Props) => {
           <p key={index}>{item}</p>
         ))}
       </div>
+      <Button
+        url="/projects"
+        cssClasses="place-self-center tabletLarge:place-self-start"
+      >
+        View Our Projects
+      </Button>
     </article>
   );
 };
