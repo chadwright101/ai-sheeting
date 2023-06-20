@@ -14,14 +14,14 @@ const {
 
 const WhatWeAreAbout = ({ cssClasses }: Props) => {
   return (
-    <article className={`grid gap-14 ${cssClasses}`}>
+    <article className={`flex flex-col gap-14 ${cssClasses}`}>
       <h2 className="tabletLarge:text-left">What We&apos;re About</h2>
       <ImageContainer
         src="/projects/Avenge/DJI_0544.jpg"
         alt="A&I Sheeting - What we're about"
-        width={900}
-        height={250}
-        cssClasses="h-[250px] tablet:h-[300px] tabletLarge:h-[230px] object-cover"
+        width={800}
+        height={450}
+        cssClasses="hidden h-[230px] object-cover tabletLarge:block"
       />
       <ul className="flex flex-wrap gap-y-14 gap-x-8 justify-center mx-auto tablet:grid grid-cols-4 tabletLarge:gap-y-10 tabletLarge:mx-0 tabletLarge:grid-cols-3 tabletLarge:gap-x-4 desktop:grid-cols-24 desktop:place-items-start">
         {whatWeAreAbout.map(({ iconUrl, title }, index) => (

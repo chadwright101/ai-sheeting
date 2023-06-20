@@ -58,8 +58,10 @@
       "/projects/Soweto/DJI_0703.jpg"
     ],
     "contactUs": {
-      "phone1": "+27 11 485 1782",
-      "phone2": "+27 11 485 1783",
+      "phone1": "+27114851782",
+      "phone1Display": "011 485 1782",
+      "phone2": "+27114851783",
+      "phone2Display": "011 485 1783",
       "email": "info@roofrefurb.co.za",
       "address": "61 Hathorn Avenue, Rouxville, Johannesburg"
     }
