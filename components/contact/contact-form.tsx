@@ -1,14 +1,18 @@
-import { useState } from "react";
+"use client";
 
 import Button from "../button";
+import { useContactContext } from "../utils/contact-context";
+import ImageContainer from "../utils/image-container";
+
+import classNames from "classnames";
 
 interface Props {
   cssClasses?: string;
 }
 
 const ContactForm = ({ cssClasses }: Props) => {
-  const [showName, setShowName] = useState(false);
-  const [showMessage, setShowMessage] = useState(false);
+  const { showName, setShowName, showMessage, setShowMessage } =
+    useContactContext();
   return (
     <div className={`${cssClasses}`}>
       <h5 className="font-500 text-[24px]">Get a quote now!</h5>
@@ -75,8 +79,7 @@ const ContactForm = ({ cssClasses }: Props) => {
                   required
                   rows={5}
                   name="message"
-                  placeholder="Type your message
-        here..."
+                  placeholder="Type your message here..."
                   className="bg-grey placeholder-black/75 border border-black/60 italic px-2 py-1 font-light focus:bg-pink focus:placeholder-beige focus:text-beige"
                 ></textarea>
               </div>
@@ -91,6 +94,19 @@ const ContactForm = ({ cssClasses }: Props) => {
           )}
         </form>
       </section>
+      <ImageContainer
+        src="/projects/Diesel road/DJI_0625.jpg"
+        alt="A&I Sheeting - Contact Us"
+        width={700}
+        height={500}
+        cssClasses={classNames(
+          "hidden tabletLarge:block object-cover h-[450px] w-full",
+          {
+            "tabletLarge:h-[354px]": showName,
+            "tabletLarge:h-[160px]": showMessage,
+          }
+        )}
+      />
     </div>
   );
 };

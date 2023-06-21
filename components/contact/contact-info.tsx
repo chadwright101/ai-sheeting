@@ -1,5 +1,6 @@
-import { useState } from "react";
 import Link from "next/link";
+
+import { useContactContext } from "../utils/contact-context";
 
 import pageData from "../../data/page-data.json";
 
@@ -14,9 +15,15 @@ const {
 } = pageData;
 
 const ContactInfo = ({ cssClasses }: Props) => {
-  const [showEmail, setShowEmail] = useState(false);
-  const [showPhone1, setShowPhone1] = useState(false);
-  const [showPhone2, setShowPhone2] = useState(false);
+  const {
+    showPhone1,
+    setShowPhone1,
+    showPhone2,
+    setShowPhone2,
+    showEmail,
+    setShowEmail,
+  } = useContactContext();
+
   return (
     <div className={`grid gap-10 ${cssClasses}`}>
       <h2 className="tabletLarge:text-left">Contact Us</h2>
