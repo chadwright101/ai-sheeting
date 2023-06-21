@@ -1,11 +1,10 @@
-"use client";
-
 import { ReactNode } from "react";
 
 import Header from "@/components/navigation/header";
 
 import "./globals.css";
 import Footer from "@/components/navigation/footer";
+import { ContactContextProvider } from "@/components/utils/contact-context";
 
 interface Props {
   children: ReactNode;
@@ -17,7 +16,7 @@ export default function RootLayout({ children }: Props) {
       <body>
         <Header />
         <div className="mx-5 max-w-[1400px] tabletLarge:mx-10 desktop:mx-auto">
-          {children}
+          <ContactContextProvider>{children}</ContactContextProvider>
         </div>
         <Footer />
       </body>
