@@ -18,8 +18,8 @@ const AboutUs = ({ cssClasses }: Props) => {
       <ImageContainer
         src="/DSC03266.jpg"
         alt="A&I Sheeting - About Us"
-        width={900}
-        height={250}
+        width={1000}
+        height={450}
         cssClasses="h-[250px] tablet:h-[300px] tabletLarge:h-[230px] object-cover"
       />
       <div className=" flex flex-col gap-4">

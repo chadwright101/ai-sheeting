@@ -10,15 +10,15 @@ const ContactMap = ({ cssClasses }: Props) => {
   });
   if (!isLoaded)
     return (
-      <div className="mt-10 bg-beige text-43px text-center py-16 max-w-[1400px]"></div>
+      <div className="mt-10 bg-white text-[30px] text-center py-16 max-w-[1400px]"></div>
     );
   return (
     <GoogleMap
       zoom={13}
-      center={{ lat: -34.083758, lng: 23.358114 }}
+      center={{ lat: -26.1518844, lng: 28.0893148 }}
       mapContainerClassName={`${cssClasses}`}
     >
-      <Marker position={{ lat: -34.083758, lng: 23.358114 }} />
+      <Marker position={{ lat: -26.1518844, lng: 28.0893148 }} />
     </GoogleMap>
   );
 };

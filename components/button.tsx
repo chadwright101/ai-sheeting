@@ -8,14 +8,26 @@ interface Props {
   url?: string;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
   formNext?: boolean;
+  buttonWhite?: boolean;
 }
 
-const Button = ({ children, form, cssClasses, url, onClick }: Props) => {
+const Button = ({
+  children,
+  form,
+  cssClasses,
+  url,
+  onClick,
+  buttonWhite,
+}: Props) => {
   if (form) {
     return (
       <button
         type={"submit"}
-        className={`bg-orange text-subheading font-500 text-black px-6 py-2.5 drop-shadow-md tabletLarge:hover:bg-orange/80 hover:text-black text-center rounded-[5px] ${cssClasses}`}
+        className={`text-subheading font-500 text-black px-6 py-2.5 drop-shadow-md hover:text-black text-center rounded-[5px] ${
+          buttonWhite
+            ? "bg-white tabletLarge:hover:bg-white/80"
+            : "bg-orange tabletLarge:hover:bg-orange/80"
+        } ${cssClasses}`}
         onClick={onClick}
       >
         {children}
