@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import Button from "../button";
 
 interface Props {
@@ -8,13 +9,10 @@ interface Props {
 const ContactForm = ({ cssClasses }: Props) => {
   const [showName, setShowName] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
-
   return (
     <div className={`${cssClasses}`}>
-      <p className="mb-6 italic">
-        Please fill out the form below and we&apos;ll get back to you ASAP...
-      </p>
-      <section className="bg-orange -mx-5 py-14 px-8 tabletLarge:mx-0">
+      <h5 className="font-500 text-[24px]">Get a quote now!</h5>
+      <section className="bg-orange -mx-5 py-8 px-8 mt-12 mb-8 tabletLarge:mx-0">
         <form action="" method="POST" className="flex flex-col gap-8">
           <input type="hidden" name="_gotcha" className="hidden" />
           <div className="flex flex-col gap-8">
