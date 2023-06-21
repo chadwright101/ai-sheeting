@@ -1,3 +1,5 @@
+"use client";
+
 import DesktopHeaderBar from "./header/desktop-header-bar";
 import MobileHeaderBar from "./header/mobile-header-bar";
 
