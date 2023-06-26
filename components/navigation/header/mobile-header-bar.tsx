@@ -1,9 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import ImageContainer from "@/components/utils/image-container";
 import navList from "@/data/navigation-data.json";
+import classNames from "classnames";
 
 interface Props {
   cssClasses?: string;
@@ -11,6 +13,8 @@ interface Props {
 
 const MobileHeaderBar = ({ cssClasses }: Props) => {
   const [menuToggle, setMenuToggle] = useState(false);
+
+  const pathName = usePathname();
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -106,11 +110,17 @@ const MobileHeaderBar = ({ cssClasses }: Props) => {
               <li key={index} className="text-left max-w-[80%]">
                 <Link
                   href={url}
-                  className={`text-[20px] p-4 -m-4 ${
-                    index === 6
-                      ? "font-[600] text-black hover:text-black"
-                      : "text-white font-300 hover:text-white"
-                  }`}
+                  className={classNames(
+                    `text-[20px] p-4 -m-4 ${
+                      index === 6
+                        ? "font-[600] text-black hover:text-black"
+                        : "text-white font-300 hover:text-white"
+                    }`,
+                    {
+                      "underline underline-offset-8 decoration-2 font-[550]":
+                        pathName === url,
+                    }
+                  )}
                   onClick={() => setMenuToggle(false)}
                 >
                   {title}

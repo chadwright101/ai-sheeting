@@ -1,14 +1,17 @@
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import ImageContainer from "@/components/utils/image-container";
 
 import navList from "@/data/navigation-data.json";
+import classNames from "classnames";
 
 interface Props {
   cssClasses?: string;
 }
 
 const DesktopHeaderBar = ({ cssClasses }: Props) => {
+  const pathName = usePathname();
   return (
     <div
       className={`justify-between items-center w-full h-[148px] ${cssClasses}`}
@@ -38,9 +41,15 @@ const DesktopHeaderBar = ({ cssClasses }: Props) => {
             >
               <Link
                 href={url}
-                className={`text-white ${
-                  index === 6 ? "font-500 hover:text-black" : "font-[325]"
-                }`}
+                className={classNames(
+                  `text-white ${
+                    index === 6 ? "font-500 hover:text-black" : "font-[325]"
+                  }`,
+                  {
+                    "underline underline-offset-8 decoration-2 font-[550] hover:text-white":
+                      pathName === url,
+                  }
+                )}
               >
                 {title}
               </Link>

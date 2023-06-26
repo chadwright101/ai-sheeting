@@ -10,7 +10,11 @@ const ContactMap = ({ cssClasses }: Props) => {
   });
   if (!isLoaded)
     return (
-      <div className="mt-10 bg-white text-[30px] text-center py-16 max-w-[1400px]"></div>
+      <div
+        className={`border-2 border-black text-[30px] grid place-items-center py-16 w-full h-full ${cssClasses}`}
+      >
+        Map loading...
+      </div>
     );
   return (
     <GoogleMap

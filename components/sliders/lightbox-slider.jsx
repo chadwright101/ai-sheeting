@@ -83,7 +83,7 @@ const LightboxSlider = ({ imageList, cssClasses }) => {
       {/* slider */}
       <Splide
         options={{
-          type: "slide",
+          type: "loop",
           pagination: false,
           perPage: 1,
           perMove: 1,

@@ -9,13 +9,12 @@ import WhatWeAreAbout from "@/components/pages/home-page/what-we-are-about";
 import ImageContainer from "@/components/utils/image-container";
 import ContactForm from "@/components/contact/contact-form";
 import ContactMap from "@/components/contact/contact-map";
-import { useContactContext } from "@/components/utils/contact-context";
+import { useGlobalContext } from "@/components/utils/global-context";
 
 import classNames from "classnames";
 
 export default function Home() {
-  const { showName, setShowName, showMessage, setShowMessage } =
-    useContactContext();
+  const { showName } = useGlobalContext();
   return (
     <>
       <VideoHero cssClasses="-mx-5 tabletLarge:-px-10 -mt-12" />
@@ -47,7 +46,7 @@ export default function Home() {
         <Gallery />
       </div>
       <hr className="my-12 text-black tabletLarge:invisible" />
-      <div className="mt-12 grid gap-x-10 gap-y-10 tabletLarge:grid-cols-2 tabletLarge:grid-rows-[18rem_1fr]">
+      <div className="mt-12 grid gap-x-10 gap-y-10 tabletLarge:grid-cols-2 tabletLarge:grid-rows-[17.90rem_1fr]">
         <ContactInfo cssClasses="tabletLarge:mb-auto" />
         <ContactForm
           cssClasses={classNames("", {
