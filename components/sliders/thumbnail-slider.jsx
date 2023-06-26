@@ -55,11 +55,11 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
               onClick={() => slider1.current.go(index)}
               eager={index < 2 ? true : false}
               smallest={85}
-              phone={50}
-              tablet={45}
-              tabletLarge={40}
-              desktopSmall={35}
-              desktop={25}
+              phone={70}
+              tablet={65}
+              tabletLarge={60}
+              desktopSmall={55}
+              desktop={45}
             />
           </SplideSlide>
         ))}
@@ -90,8 +90,9 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
                 width={200}
                 height={200}
                 cssClasses="object-cover h-full w-full cursor-pointer px-1 pt-2"
-                desktopSmall={7.5}
                 quality={30}
+                tabletLarge={7.5}
+                desktopSmall={7.5}
                 desktop={7.5}
                 onClick={() => slider1.current.go(index)}
                 loading={index < 1 ? "eager" : "lazy"}

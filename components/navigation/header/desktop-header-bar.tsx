@@ -24,6 +24,9 @@ const DesktopHeaderBar = ({ cssClasses }: Props) => {
           height={75}
           cssClasses="object-cover object-left-bottom w-full h-full"
           eager
+          tabletLarge={30}
+          desktopSmall={30}
+          desktop={30}
         />
         <h6 className="font-Ovo text-[15px] absolute -translate-y-[23px] translate-x-[40.5px]">
           Established 1976

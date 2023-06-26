@@ -68,12 +68,12 @@ const LightboxSlider = ({ imageList, cssClasses }) => {
                 height={900}
                 quality={60}
                 cssClasses="object-cover place-self-center"
-                smallest={60}
-                phone={60}
-                tablet={50}
-                tabletLarge={45}
-                desktopSmall={40}
-                desktop={50}
+                smallest={75}
+                phone={75}
+                tablet={60}
+                tabletLarge={55}
+                desktopSmall={50}
+                desktop={60}
               />
             </SplideSlide>
           ))}
@@ -126,11 +126,11 @@ const LightboxSlider = ({ imageList, cssClasses }) => {
               )}
               eager={index < 2 ? true : false}
               smallest={85}
-              phone={50}
-              tablet={45}
-              tabletLarge={40}
-              desktopSmall={35}
-              desktop={25}
+              phone={75}
+              tablet={65}
+              tabletLarge={50}
+              desktopSmall={45}
+              desktop={45}
             />
           </SplideSlide>
         ))}
