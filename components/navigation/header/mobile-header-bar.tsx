@@ -53,6 +53,9 @@ const MobileHeaderBar = ({ cssClasses }: Props) => {
             height={75}
             cssClasses="object-cover object-left-bottom w-full h-full"
             eager
+            smallest={30}
+            phone={30}
+            tablet={30}
           />
           <h6 className="font-Ovo text-[9px] absolute -translate-y-[15px] translate-x-[23.5px]">
             Established 1976

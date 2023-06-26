@@ -42,6 +42,12 @@ const Footer = ({ cssClasses }: Props) => {
               alt="A&I Sheeting logo"
               width={83}
               height={52}
+              smallest={40}
+              phone={30}
+              tablet={30}
+              tabletLarge={20}
+              desktopSmall={20}
+              desktop={20}
             />
             <h6 className="font-Ovo text-[12px] absolute -translate-x-[2.5px] translate-y-[2px]">
               Established 1976
@@ -53,6 +59,9 @@ const Footer = ({ cssClasses }: Props) => {
             width={143}
             height={143}
             cssClasses="hidden tabletLarge:block ml-auto mt-auto drop-shadow-md rotate-[2deg]"
+            tabletLarge={30}
+            desktopSmall={30}
+            desktop={30}
           />
         </div>
       </div>

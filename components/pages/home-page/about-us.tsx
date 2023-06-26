@@ -21,6 +21,12 @@ const AboutUs = ({ cssClasses }: Props) => {
         width={1000}
         height={450}
         cssClasses="h-[250px] tablet:h-[300px] tabletLarge:h-[230px] object-cover"
+        smallest={90}
+        phone={90}
+        tablet={90}
+        tabletLarge={50}
+        desktopSmall={50}
+        desktop={40}
       />
       <div className=" flex flex-col gap-4">
         {aboutUs.map((item, index) => (

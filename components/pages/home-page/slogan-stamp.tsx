@@ -26,6 +26,12 @@ const SloganStamp = ({ cssClasses }: Props) => {
         width={212}
         height={212}
         cssClasses="rotate-[-4deg] drop-shadow-md tabletLarge:w-[163px] h-auto"
+        smallest={75}
+        phone={75}
+        tablet={60}
+        tabletLarge={40}
+        desktopSmall={30}
+        desktop={20}
       />
     </section>
   );

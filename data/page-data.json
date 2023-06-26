@@ -103,18 +103,19 @@
       "Specialised Anti-corrosion Cladding",
       "AIWC (Specialised wind resistant sheet clips)",
       "Galvanised Products"
+    ],
+    "articles": [
+      {
+        "title": "A&I Sheeting - Protecting your biggest asset",
+        "url": "/articles/a-i-sheeting-protecting-your-biggest-asset.pdf"
+      },
+      {
+        "title": "A note from the roof remedial specialist",
+        "url": "/articles/a-i-sheeting-a-note-from-the-roof-remedial-specialist.pdf"
+      }
     ]
   },
-  "articles": [
-    {
-      "title": "A&I Sheeting - Protecting your biggest asset",
-      "url": ""
-    },
-    {
-      "title": "A note from the roof remedial specialist",
-      "url": ""
-    }
-  ],
+
   "projectsPage": {
     "slider": [
       {

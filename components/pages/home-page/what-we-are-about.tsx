@@ -22,6 +22,9 @@ const WhatWeAreAbout = ({ cssClasses }: Props) => {
         width={800}
         height={450}
         cssClasses="hidden h-[230px] object-cover tabletLarge:block"
+        tabletLarge={50}
+        desktopSmall={50}
+        desktop={40}
       />
       <ul className="flex flex-wrap gap-y-14 gap-x-8 justify-center mx-auto tablet:grid grid-cols-4 tabletLarge:gap-y-10 tabletLarge:mx-0 tabletLarge:grid-cols-3 tabletLarge:gap-x-4 desktop:grid-cols-24 desktop:place-items-start">
         {whatWeAreAbout.map(({ iconUrl, title }, index) => (
