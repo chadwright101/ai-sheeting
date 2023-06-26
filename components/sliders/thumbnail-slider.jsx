@@ -19,15 +19,12 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
         options={{
           type: "slide",
           pagination: false,
-          perPage: 1,
-          perMove: 1,
           speed: 2000,
           interval: 6500,
           autoplay: true,
-          dragMinThreshold: { touch: 2000, mouse: 0 },
+          dragMinThreshold: 10,
           gap: "1rem",
           fixedHeight: 600,
-          arrows: true,
           breakpoints: {
             1200: {
               fixedHeight: 550,
@@ -45,7 +42,7 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
           },
         }}
         className="w-full h-[325px] phone:h-[350px] tablet:h-[450px] tabletLarge:h-[550px] desktopSmall:h-[600px]"
-        ref={(slider) => (slider2.current = slider)}
+        ref={(slider) => (slider1.current = slider)}
       >
         {imageList.map((item, index) => (
           <SplideSlide key={index} className="h-full w-full">
@@ -81,7 +78,7 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
           arrows: false,
           snap: true,
         }}
-        ref={(slider) => (slider1.current = slider)}
+        ref={(slider) => (slider2.current = slider)}
         className="hidden tabletLarge:block"
       >
         {imageList.map((item, index) => (

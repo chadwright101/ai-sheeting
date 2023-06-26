@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { useContactContext } from "../utils/contact-context";
+import { useGlobalContext } from "../utils/global-context";
 
 import pageData from "../../data/page-data.json";
 
@@ -22,7 +22,7 @@ const ContactInfo = ({ cssClasses }: Props) => {
     setShowPhone2,
     showEmail,
     setShowEmail,
-  } = useContactContext();
+  } = useGlobalContext();
 
   return (
     <div className={`grid gap-10 ${cssClasses}`}>

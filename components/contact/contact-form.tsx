@@ -1,7 +1,7 @@
 "use client";
 
 import Button from "../button";
-import { useContactContext } from "../utils/contact-context";
+import { useGlobalContext } from "../utils/global-context";
 import ImageContainer from "../utils/image-container";
 
 import classNames from "classnames";
@@ -11,8 +11,9 @@ interface Props {
 }
 
 const ContactForm = ({ cssClasses }: Props) => {
-  const { showName, setShowName, showMessage, setShowMessage } =
-    useContactContext();
+  const { showName, showMessage, setShowName, setShowMessage } =
+    useGlobalContext();
+
   return (
     <div className={`${cssClasses}`}>
       <h5 className="font-500 text-[24px]">Get a quote now!</h5>
@@ -102,8 +103,8 @@ const ContactForm = ({ cssClasses }: Props) => {
         cssClasses={classNames(
           "hidden tabletLarge:block object-cover h-[450px] w-full",
           {
-            "tabletLarge:h-[354px]": showName,
-            "tabletLarge:h-[160px]": showMessage,
+            "tabletLarge:h-[354px]": showName && !showMessage,
+            "tabletLarge:h-[161px]": showMessage && showMessage,
           }
         )}
       />
