@@ -30,8 +30,8 @@ const Testimonials = ({ cssClasses }: Props) => {
       >
         {testimonials.map(
           ({ title, paragraph1, paragraph2, paragraph3, client }, index) => (
-            <SplideSlide>
-              <div key={index} className="mx-8">
+            <SplideSlide key={index}>
+              <div className="mx-8">
                 <h6 className="text-center mb-8 tabletLarge:text-left">
                   {title}
                 </h6>
