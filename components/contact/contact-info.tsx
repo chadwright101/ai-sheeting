@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import { useGlobalContext } from "../utils/global-context";
-import { useState } from "react";
 
 import pageData from "../../data/page-data.json";
 

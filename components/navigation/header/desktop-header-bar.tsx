@@ -50,7 +50,7 @@ const DesktopHeaderBar = ({ cssClasses }: Props) => {
                   }`,
                   {
                     "underline underline-offset-8 decoration-2 font-[550] hover:text-white":
-                      pathName === url,
+                      pathName === url && pathName !== "/free-quote",
                   }
                 )}
               >
