@@ -86,7 +86,7 @@ export const GlobalContextProvider = ({ children }: Props) => {
   };
   const setShowPhone1 = (value: boolean) => {
     dispatch({
-      type: "SET_SHOW_PHONE_1",
+      type: "PHONE_1",
       payload: value,
     });
   };
