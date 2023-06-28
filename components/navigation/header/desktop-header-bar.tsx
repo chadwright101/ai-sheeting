@@ -38,7 +38,7 @@ const DesktopHeaderBar = ({ cssClasses }: Props) => {
             <li
               key={index}
               className={`${
-                index === 6 &&
+                title === "Get A Free Roof Inspection" &&
                 "bg-orange p-4 drop-shadow-sm rounded-[20px_0px_20px_20px] w-[160px] text-center translate-y-[42px]"
               }`}
             >
@@ -46,7 +46,9 @@ const DesktopHeaderBar = ({ cssClasses }: Props) => {
                 href={url}
                 className={classNames(
                   `text-white ${
-                    index === 6 ? "font-500 hover:text-black" : "font-[325]"
+                    title === "Get A Free Roof Inspection"
+                      ? "font-500 hover:text-black"
+                      : "font-[325]"
                   }`,
                   {
                     "underline underline-offset-8 decoration-2 font-[550] hover:text-white":

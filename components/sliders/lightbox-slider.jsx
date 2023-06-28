@@ -40,7 +40,7 @@ const LightboxSlider = ({ imageList, cssClasses }) => {
             autoplay: true,
             dragMinThreshold: { touch: 2000, mouse: 0 },
             breakpoints: {
-              900: {
+              1050: {
                 arrows: false,
               },
             },

@@ -29,7 +29,7 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
             1200: {
               fixedHeight: 550,
             },
-            1000: {
+            1050: {
               arrows: false,
               fixedHeight: 450,
             },
@@ -41,7 +41,7 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
             },
           },
         }}
-        className="w-full h-[325px] phone:h-[350px] tablet:h-[450px] tabletLarge:h-[550px] desktopSmall:h-[600px]"
+        className="w-full h-[325px] phone:h-[350px] tablet:h-[450px] tabletLarge:h-[525px] desktopSmall:h-[550px]"
         ref={(slider) => (slider1.current = slider)}
       >
         <div className="splide__arrows splide__arrows--ltr">

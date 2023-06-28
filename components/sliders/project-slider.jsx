@@ -26,11 +26,11 @@ const ProjectsSlider = ({ sliderData, cssClasses }) => {
           speed: 2000,
           interval: 10000,
           autoplay: true,
-          dragMinThreshold: 10,
+          dragMinThreshold: 1000,
           pauseOnFocus: true,
           gap: "1rem",
           breakpoints: {
-            1000: {
+            1050: {
               arrows: false,
             },
           },

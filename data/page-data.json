@@ -231,31 +231,37 @@
     {
       "question": "Is there a need to maintain my roof? If so, why?",
       "url": "/faqs#question1",
-      "answer": "Yes, the roof of a building is one of a its greatest assets. After all it protects the user’s stock, machinery, employees, etc. New builds can be very costly to a company, and thus the correct maintenance programmes need to be implemented in order to avoid complete replacement. By implementing the correct maintenance programmes for the right building, the life span of that building can be vastly increased."
+      "id": "question1",
+      "answer": "Yes, the roof of a building is one of a its greatest assets. After all it protects the user's stock, machinery, employees, etc. New builds can be very costly to a company, and thus the correct maintenance programmes need to be implemented in order to avoid complete replacement. By implementing the correct maintenance programmes for the right building, the life span of that building can be vastly increased."
     },
     {
-      "question": "s it more feasible to replace my roof or to refurbish it?",
+      "question": "Is it more feasible to replace my roof or to refurbish it?",
       "url": "/faqs#question2",
+      "id": "question2",
       "answer": "The cost to replace a roofing system is generally a very expensive project. In many cases a full replacement is not necessary. There are numerous cost saving options when looking to not only resolve roof leaks but also refurbish an existing building. These options can be tailor made to the client/tenants needs"
     },
     {
       "question": "Is there a green roofing solution?",
       "url": "/faqs#question3",
+      "id": "question3",
       "answer": "Yes, there are several green, energy reducing options that can be considered when refurbishing an existing warehouse/building. For example, by maximising the natural lighting, insulation and natural ventilation you can vastly decrease your carbon footprint on the earth. A lower carbon footprint also reduces expenses on air conditioning and lighting costs. Therefore, in the long run, being green also means saving money."
     },
     {
       "question": "What is the benefit to having insulation installed in my building?",
       "url": "/faqs#question4",
+      "id": "question4",
       "answer": "Insulation offers your building reduced heat transfer through sheeting, thereby minimising energy consumption on air-conditioning/cooling. Insulation can help create the ideal ambient temperature inside the building, being cooler in summer, or warmer in winter."
     },
     {
       "question": "Do we provide guarantees?",
       "url": "/faqs#question5",
+      "id": "question5",
       "answer": "We offer guarantees to suit our clients. This is provided they enter maintenance schedules that we recommend for their buildings. Depending on the location and atmosphere the building is subjected to, will determine how extensive the maintenance plans may be. Without the correct maintenance these guarantees may be limited and the lifespan of a system will shorten exponentially."
     },
     {
       "question": "Do we comply with Health and Safety Regulations?",
       "url": "/faqs#question6",
+      "id": "question6",
       "answer": "Yes, we have a full-time safety officer who has extensive in-house and certified external training, managing all our sites. We compile in-depth, site specific safety files for every site with all the relevant documentation. Not only do we comply with the Construction Regulations and the Occupational Health and Safety Act, but we aim to set a benchmark or precedent for the standards required for the Industry. Many of our employees have been with us for over 20 years and have been trained in working from heights and fall arrest training. We have complied with companies that have had some of the most stringent safety protocol, such as Eskom, SAB, various mines as well as numerous independent private companies which are audited to first world standards."
     }
   ]
