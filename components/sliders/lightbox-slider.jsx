@@ -38,7 +38,7 @@ const LightboxSlider = ({ imageList, cssClasses }) => {
             speed: 2000,
             interval: 6500,
             autoplay: true,
-            dragMinThreshold: { touch: 2000, mouse: 0 },
+            dragMinThreshold: { mouse: 50, touch: 200 },
             breakpoints: {
               1050: {
                 arrows: false,
@@ -90,7 +90,7 @@ const LightboxSlider = ({ imageList, cssClasses }) => {
           speed: 2000,
           interval: 6500,
           autoplay: true,
-          dragMinThreshold: { touch: 2000, mouse: 0 },
+          dragMinThreshold: { mouse: 50, touch: 200 },
           gap: "1rem",
           fixedHeight: 600,
           arrows: true,
