@@ -23,7 +23,7 @@ const ProjectsSlider = ({ sliderData, cssClasses }) => {
         options={{
           type: "loop",
           pagination: false,
-          speed: 2000,
+          speed: 1500,
           interval: 10000,
           autoplay: true,
           dragMinThreshold: { mouse: 50, touch: 200 },

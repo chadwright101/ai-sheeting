@@ -19,7 +19,7 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
         options={{
           type: "slide",
           pagination: false,
-          speed: 2000,
+          speed: 1500,
           interval: 6500,
           autoplay: true,
           dragMinThreshold: { mouse: 50, touch: 200 },
