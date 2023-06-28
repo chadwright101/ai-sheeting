@@ -115,7 +115,7 @@ const MobileHeaderBar = ({ cssClasses }: Props) => {
                   href={url}
                   className={classNames(
                     `text-[20px] p-4 -m-4 ${
-                      index === 6
+                      title === "Get A Free Roof Inspection"
                         ? "font-[600] text-black hover:text-black"
                         : "text-white font-300 hover:text-white"
                     }`,

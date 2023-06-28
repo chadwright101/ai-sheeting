@@ -29,7 +29,7 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
             1200: {
               fixedHeight: 550,
             },
-            1000: {
+            1050: {
               arrows: false,
               fixedHeight: 450,
             },
@@ -41,9 +41,43 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
             },
           },
         }}
-        className="w-full h-[325px] phone:h-[350px] tablet:h-[450px] tabletLarge:h-[550px] desktopSmall:h-[600px]"
+        className="w-full h-[325px] phone:h-[350px] tablet:h-[450px] tabletLarge:h-[525px] desktopSmall:h-[550px]"
         ref={(slider) => (slider1.current = slider)}
       >
+        <div className="splide__arrows splide__arrows--ltr">
+          <button
+            className="splide__arrow splide__arrow--prev"
+            type="button"
+            aria-label="Previous slide"
+            aria-controls="splide02-track"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 40 40"
+              width="35"
+              height="35"
+              focusable="false"
+            >
+              <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
+            </svg>
+          </button>
+          <button
+            className="splide__arrow splide__arrow--next"
+            type="button"
+            aria-label="Next slide"
+            aria-controls="splide02-track"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 40 40"
+              width="35"
+              height="35"
+              focusable="false"
+            >
+              <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
+            </svg>
+          </button>
+        </div>
         {imageList.map((item, index) => (
           <SplideSlide key={index} className="h-full w-full">
             <ImageContainer
@@ -51,7 +85,7 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
               alt={`A&I Sheeting - Project image ${index + 1}`}
               width={900}
               height={500}
-              cssClasses="object-cover h-full w-full tabletLarge:cursor-pointer"
+              cssClasses="object-cover h-full w-full"
               onClick={() => slider1.current.go(index)}
               eager={index < 2 ? true : false}
               smallest={85}

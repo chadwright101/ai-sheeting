@@ -46,14 +46,20 @@ export default function Home() {
         <Gallery />
       </div>
       <hr className="my-12 text-black tabletLarge:invisible" />
-      <div className="mt-12 grid gap-x-10 gap-y-10 tabletLarge:grid-cols-2 tabletLarge:grid-rows-[17.90rem_1fr]">
-        <ContactInfo cssClasses="tabletLarge:mb-auto" />
-        <ContactForm
-          cssClasses={classNames("", {
-            "tabletLarge:row-span-2": showName,
-          })}
-        />
-        <ContactMap cssClasses="w-full h-[280px] phone:h-[325px] tablet:h-[375px] tabletLarge:h-[450px]" />
+      <div>
+        <div
+          id="contact"
+          className="relative -top-[125px] tabletLarge:-top-[200px]"
+        ></div>
+        <div className="mt-12 grid gap-x-10 gap-y-10 tabletLarge:grid-cols-2 tabletLarge:grid-rows-[17.90rem_1fr]">
+          <ContactInfo cssClasses="tabletLarge:mb-auto" />
+          <ContactForm
+            cssClasses={classNames("", {
+              "tabletLarge:row-span-2": showName,
+            })}
+          />
+          <ContactMap cssClasses="w-full h-[280px] phone:h-[325px] tablet:h-[375px] tabletLarge:h-[450px]" />
+        </div>
       </div>
     </>
   );

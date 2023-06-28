@@ -20,7 +20,7 @@ const Footer = ({ cssClasses }: Props) => {
                   <Link
                     href={url}
                     className={`font-300 text-black text-[14px] ${
-                      index === 6 && "font-[600]"
+                      title === "Get A Free Roof Inspection" && "font-[600]"
                     }`}
                   >
                     {title}

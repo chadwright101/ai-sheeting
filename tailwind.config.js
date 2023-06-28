@@ -9,7 +9,7 @@ module.exports = {
     screens: {
       phone: "425px",
       tablet: "800px",
-      tabletLarge: "1000px",
+      tabletLarge: "1050px",
       desktopSmall: "1200px",
       desktop: "1450px",
     },

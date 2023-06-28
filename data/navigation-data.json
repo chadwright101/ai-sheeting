@@ -20,8 +20,12 @@
     "url": "/projects"
   },
   {
-    "title": "Contact Us",
-    "url": "/contact-us"
+    "title": "FAQs",
+    "url": "/faqs"
+  },
+  {
+    "title": "Contact",
+    "url": "/#contact"
   },
   {
     "title": "Get A Free Roof Inspection",

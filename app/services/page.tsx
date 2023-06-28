@@ -21,7 +21,9 @@ const Services = () => {
             <p className="mt-10 mb-4">{technologies.paragraph1}</p>
             <ul>
               {technologies.list.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index} className="text-left">
+                  {item}
+                </li>
               ))}
             </ul>
           </article>
@@ -40,15 +42,17 @@ const Services = () => {
           />
           <p className="col-span-2">{technologies.paragraph2}</p>
         </div>
-        <hr className="text-black my-10" />
-        <div className="mb-16 tabletLarge:grid grid-cols-2 gap-x-14 gap-y-10 tabletLarge:mb-28">
+        <hr className="text-black my-10 tabletLarge:hidden" />
+        <div className="mb-16 tabletLarge:grid grid-cols-2 gap-x-14 gap-y-10 tabletLarge:mb-28 tabletLarge:mt-10">
           <article className="order-1">
             <h3 className="text-center tabletLarge:text-left tabletLarge:mb-10">
               Product/Service Guide:
             </h3>
             <ul className="my-10 tabletLarge:my-0">
               {guide.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index} className="text-left">
+                  {item}
+                </li>
               ))}
             </ul>
           </article>

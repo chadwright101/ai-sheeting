@@ -8,18 +8,31 @@ import classNames from "classnames";
 
 interface Props {
   cssClasses?: string;
+  freeQuote?: boolean;
 }
 
-const ContactForm = ({ cssClasses }: Props) => {
+const ContactForm = ({ cssClasses, freeQuote }: Props) => {
   const { showName, showMessage, setShowName, setShowMessage } =
     useGlobalContext();
 
   return (
     <div className={`${cssClasses}`}>
-      <h5 className="font-500 text-[24px]">Get a quote now!</h5>
-      <section className="bg-orange -mx-5 py-8 px-8 mt-12 mb-8 tabletLarge:mx-0">
+      <h5 className={`font-500 text-[24px] ${!freeQuote ? "" : "hidden"}`}>
+        Get a quote now!
+      </h5>
+      <section
+        className={`bg-orange -mx-5 py-8 px-8 ${
+          !freeQuote ? "mt-12 mb-8" : ""
+        } tabletLarge:mx-0`}
+      >
         <form action="" method="POST" className="flex flex-col gap-8">
           <input type="hidden" name="_gotcha" className="hidden" />
+          <input
+            type="text"
+            name="subject"
+            defaultValue="Home page contact form query - www.roofrefurb.co.za"
+            className="hidden"
+          />
           <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-2">
               <label htmlFor="email" className="font-500">
@@ -101,7 +114,9 @@ const ContactForm = ({ cssClasses }: Props) => {
         width={700}
         height={500}
         cssClasses={classNames(
-          "hidden tabletLarge:block object-cover h-[450px] w-full",
+          `object-cover h-[450px] w-full ${
+            freeQuote ? "hidden" : "hidden tabletLarge:block"
+          }`,
           {
             "tabletLarge:h-[354px]": showName && !showMessage,
             "tabletLarge:h-[161px]": showMessage && showMessage,
