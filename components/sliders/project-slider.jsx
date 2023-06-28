@@ -23,10 +23,10 @@ const ProjectsSlider = ({ sliderData, cssClasses }) => {
         options={{
           type: "loop",
           pagination: false,
-          speed: 2000,
+          speed: 1500,
           interval: 10000,
           autoplay: true,
-          dragMinThreshold: 1000,
+          dragMinThreshold: { mouse: 50, touch: 200 },
           pauseOnFocus: true,
           gap: "1rem",
           breakpoints: {

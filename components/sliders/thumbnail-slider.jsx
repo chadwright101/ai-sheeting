@@ -19,10 +19,10 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
         options={{
           type: "slide",
           pagination: false,
-          speed: 2000,
+          speed: 1500,
           interval: 6500,
           autoplay: true,
-          dragMinThreshold: 10,
+          dragMinThreshold: { mouse: 50, touch: 200 },
           gap: "1rem",
           fixedHeight: 600,
           breakpoints: {
@@ -111,6 +111,7 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
           focus: "center",
           arrows: false,
           snap: true,
+          dragMinThreshold: { mouse: 50, touch: 200 },
         }}
         ref={(slider) => (slider2.current = slider)}
         className="hidden tabletLarge:block"
