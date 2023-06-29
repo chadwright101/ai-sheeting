@@ -66,7 +66,7 @@ const Faqs = () => {
             <li key={index}>
               <div
                 id={id}
-                className="relative -top-[125px] tabletLarge:-top-[200px]"
+                className="relative -top-[125px] tabletLarge:-top-[175px]"
               ></div>
               <h6 className="mb-4 underline underline-offset-[6px]">
                 {question}
