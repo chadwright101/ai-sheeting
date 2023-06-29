@@ -52,7 +52,7 @@ const LightboxSlider = ({ imageList, cssClasses }) => {
             className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
           >
             <Image
-              src="/icons/close.svg"
+              src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/icons/close.svg"
               alt="Close icon"
               width={55}
               height={55}
@@ -63,7 +63,7 @@ const LightboxSlider = ({ imageList, cssClasses }) => {
             <SplideSlide key={index} className="h-[80vh] flex">
               <ImageContainer
                 src={item}
-                alt={`A&I Sheeting - Project image ${index + 1}`}
+                alt={`A&I Sheeting - Gallery image ${index + 1}`}
                 width={1200}
                 height={900}
                 quality={60}
@@ -117,14 +117,13 @@ const LightboxSlider = ({ imageList, cssClasses }) => {
           <SplideSlide key={index} className="h-full w-full">
             <ImageContainer
               src={item}
-              alt={`A&I Sheeting - Project image ${index + 1}`}
+              alt={`A&I Sheeting - Gallery image ${index + 1}`}
               width={900}
               height={500}
               cssClasses="object-cover h-full w-full cursor-pointer"
               onClick={() => (
                 slider1.current.go(index), setToggleLightbox(true)
               )}
-              eager={index < 2 ? true : false}
               smallest={85}
               phone={75}
               tablet={65}

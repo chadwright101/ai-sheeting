@@ -38,7 +38,7 @@ const Footer = ({ cssClasses }: Props) => {
           </h5>
           <div className="w-[87px] h-[68px] ml-auto tabletLarge:mt-auto">
             <ImageContainer
-              src="/a&i-normal-logo.png"
+              src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/a&i-normal-logo.png"
               alt="A&I Sheeting logo"
               width={83}
               height={52}
@@ -54,7 +54,7 @@ const Footer = ({ cssClasses }: Props) => {
             </h6>
           </div>
           <ImageContainer
-            src="/Since-1976-stamp.png"
+            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/Since-1976-stamp.png"
             alt="A&I Sheeting since 1976"
             width={143}
             height={143}

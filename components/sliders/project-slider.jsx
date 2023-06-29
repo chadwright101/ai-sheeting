@@ -48,10 +48,10 @@ const ProjectsSlider = ({ sliderData, cssClasses }) => {
                 height={500}
                 cssClasses="object-cover w-full h-[275px] phone:h-[300px] tablet:h-[375px] tabletLarge:h-[400px] desktopSmall:h-[425px] desktop:h-[450px]"
                 onClick={() => slider1.current.go(index)}
-                eager={index < 2 ? true : false}
-                smallest={85}
-                phone={70}
-                tablet={65}
+                eager={index < 1 ? true : false}
+                smallest={100}
+                phone={90}
+                tablet={85}
                 tabletLarge={50}
                 desktopSmall={55}
                 desktop={50}
