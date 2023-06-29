@@ -18,7 +18,10 @@ const Projects = () => {
           name="keywords"
           content="A&I Sheeting, AI sheeting, roof refurbishers, johannesburg, Industrial roofing solutions, roof refurbishment, roof replacement,redesign roof, roofing, insulation, cladding, gutters, Steel box gutters, eave gutters, downpipes, ventilation, asbestos removal, waterproofing, coating systems, Gauteng, South Africa"
         />
-        <meta property="og:image" content="" />
+        <meta
+          property="og:image"
+          content="https://ai-sheeting-git-development-chadwright101.vercel.app/_next/image?url=https%3A%2F%2Fthe-wright-designs-website-images.s3.af-south-1.amazonaws.com%2Fai-sheeting%2Fprojects%2Favenge-2%2FDJI_0684.jpg"
+        />
         <meta property="og:title" content="Projects - A&I Sheeting" />
         <meta property="og:url" content="https://www.roofrefub.co.za" />
         <meta property="og:type" content="website" />
