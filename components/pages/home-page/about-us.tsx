@@ -26,7 +26,7 @@ const AboutUs = ({ cssClasses }: Props) => {
         tablet={100}
         tabletLarge={50}
         desktopSmall={40}
-        desktop={30}
+        desktop={35}
       />
       <div className=" flex flex-col gap-4">
         {aboutUs.map((item, index) => (

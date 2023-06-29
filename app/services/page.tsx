@@ -120,9 +120,9 @@ const Services = () => {
           width={1200}
           height={750}
           cssClasses="hidden tablet:block tablet:h-[300px] object-cover my-10 tablet:m-0"
-          tabletLarge={65}
-          desktopSmall={60}
-          desktop={55}
+          tabletLarge={50}
+          desktopSmall={45}
+          desktop={40}
         />
       </div>
     </>
