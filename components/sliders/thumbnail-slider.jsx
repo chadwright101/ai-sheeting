@@ -82,18 +82,17 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
           <SplideSlide key={index} className="h-full w-full">
             <ImageContainer
               src={item}
-              alt={`A&I Sheeting - Project image ${index + 1}`}
+              alt={`A&I Sheeting - Gallery image ${index + 1}`}
               width={900}
               height={500}
               cssClasses="object-cover h-full w-full"
               onClick={() => slider1.current.go(index)}
-              eager={index < 2 ? true : false}
               smallest={85}
               phone={70}
               tablet={65}
-              tabletLarge={60}
-              desktopSmall={55}
-              desktop={45}
+              tabletLarge={75}
+              desktopSmall={75}
+              desktop={75}
             />
           </SplideSlide>
         ))}
@@ -121,16 +120,15 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
             <div className="w-full bg-white h-full flex justify-center overflow-hidden">
               <ImageContainer
                 src={item}
-                alt={`A&I Sheeting - Project image ${index + 1}`}
+                alt={`A&I Sheeting - Gallery thumbnail image ${index + 1}`}
                 width={200}
                 height={200}
                 cssClasses="object-cover h-full w-full cursor-pointer px-1 pt-2"
-                quality={30}
-                tabletLarge={7.5}
-                desktopSmall={7.5}
-                desktop={7.5}
+                quality={40}
+                tabletLarge={12.5}
+                desktopSmall={12.5}
+                desktop={12.5}
                 onClick={() => slider1.current.go(index)}
-                loading={index < 1 ? "eager" : "lazy"}
               />
             </div>
           </SplideSlide>

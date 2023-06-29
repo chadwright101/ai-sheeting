@@ -109,10 +109,13 @@ const ContactForm = ({ cssClasses, freeQuote }: Props) => {
         </form>
       </section>
       <ImageContainer
-        src="/projects/Diesel road/DJI_0625.jpg"
+        src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/old website/20180720_113017.jpg"
         alt="A&I Sheeting - Contact Us"
         width={700}
         height={500}
+        tabletLarge={50}
+        desktopSmall={40}
+        desktop={30}
         cssClasses={classNames(
           `object-cover h-[450px] w-full ${
             freeQuote ? "hidden" : "hidden tabletLarge:block"

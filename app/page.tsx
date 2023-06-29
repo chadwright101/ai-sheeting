@@ -1,5 +1,7 @@
 "use client";
 
+import Head from "next/head";
+
 import AboutUs from "@/components/pages/home-page/about-us";
 import ContactInfo from "@/components/contact/contact-info";
 import Gallery from "@/components/pages/home-page/gallery";
@@ -17,6 +19,38 @@ export default function Home() {
   const { showName } = useGlobalContext();
   return (
     <>
+      <Head>
+        <title>Home - A&I Sheeting</title>
+        <meta
+          name="description"
+          content="First established in 1976, with a combined in-house experience of over 100 years,  A&I specialises in providing Industrial roofing solutions for Gauteng and beyond. We offer professional assistance in the refurbishment, replacement and redesign of roofing, insulation, cladding, gutters (Steel box gutters and eave gutters), downpipes, ventilation, asbestos removal, waterproofing and coating systems to suit the building as well as its user."
+        />
+        <meta
+          name="keywords"
+          content="A&I Sheeting, AI sheeting, roof refurbishers, johannesburg, Industrial roofing solutions, roof refurbishment, roof replacement,redesign roof, roofing, insulation, cladding, gutters, Steel box gutters, eave gutters, downpipes, ventilation, asbestos removal, waterproofing, coating systems, Gauteng, South Africa"
+        />
+        <meta
+          property="og:image"
+          content="https://ai-sheeting-git-development-chadwright101.vercel.app/_next/image?url=https%3A%2F%2Fthe-wright-designs-website-images.s3.af-south-1.amazonaws.com%2Fai-sheeting%2Fprojects%2Favenge-2%2FDJI_0684.jpg"
+        />
+        <meta
+          property="og:image"
+          content="https://ai-sheeting-git-development-chadwright101.vercel.app/_next/image?url=https%3A%2F%2Fthe-wright-designs-website-images.s3.af-south-1.amazonaws.com%2Fai-sheeting%2Fprojects%2Fdiesel-road%2FDJI_0636.jpg"
+        />
+        <meta
+          property="og:image"
+          content="https://ai-sheeting-git-development-chadwright101.vercel.app/_next/image?url=https%3A%2F%2Fthe-wright-designs-website-images.s3.af-south-1.amazonaws.com%2Fai-sheeting%2Fprojects%2Fjt-pics%2FDJI_0645.jpg"
+        />
+        <meta property="og:title" content="Home - A&I Sheeting" />
+        <meta property="og:url" content="https://www.roofrefub.co.za" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="First established in 1976, with a combined in-house experience of over 100 years,  A&I specialises in providing Industrial roofing solutions for Gauteng and beyond. We offer professional assistance in the refurbishment, replacement and redesign of roofing, insulation, cladding, gutters (Steel box gutters and eave gutters), downpipes, ventilation, asbestos removal, waterproofing and coating systems to suit the building as well as its user."
+        />
+        <meta property="og:site_name" content="Home - A&I Sheeting" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></link>
+      </Head>
       <VideoHero cssClasses="-mx-5 tabletLarge:-px-10 -mt-12" />
       <SloganStamp cssClasses="my-10 tabletLarge:my-12" />
       <main className="tabletLarge:grid grid-cols-2 gap-14">
@@ -30,7 +64,7 @@ export default function Home() {
           <AboutUs />
         </div>
         <ImageContainer
-          src="/projects/Avenge/DJI_0544.jpg"
+          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/avenge-2/DJI_0701.jpg"
           alt="A&I Sheeting - What we're about"
           width={1000}
           height={450}

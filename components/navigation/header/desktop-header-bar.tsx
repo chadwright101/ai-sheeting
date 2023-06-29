@@ -18,7 +18,7 @@ const DesktopHeaderBar = ({ cssClasses }: Props) => {
     >
       <Link href="/" className="w-[162px] h-[100px]">
         <ImageContainer
-          src="/a&i-builder-logo.png"
+          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/a&i-builder-logo.png"
           alt="A&I Sheeting logo"
           width={110}
           height={75}

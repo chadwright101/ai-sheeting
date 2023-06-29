@@ -16,17 +16,17 @@ const AboutUs = ({ cssClasses }: Props) => {
     <article className={`flex flex-col gap-14 ${cssClasses}`}>
       <h2 className="tabletLarge:text-left">About Us</h2>
       <ImageContainer
-        src="/DSC03266.jpg"
+        src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/DSC03266.jpg"
         alt="A&I Sheeting - About Us"
         width={1000}
         height={450}
         cssClasses="h-[250px] tablet:h-[300px] tabletLarge:h-[230px] object-cover"
-        smallest={90}
-        phone={90}
-        tablet={90}
+        smallest={100}
+        phone={100}
+        tablet={100}
         tabletLarge={50}
-        desktopSmall={50}
-        desktop={40}
+        desktopSmall={40}
+        desktop={30}
       />
       <div className=" flex flex-col gap-4">
         {aboutUs.map((item, index) => (
