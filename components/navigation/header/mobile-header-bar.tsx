@@ -105,7 +105,7 @@ const MobileHeaderBar = ({ cssClasses }: Props) => {
               alt="Menu icon"
               width={40}
               height={40}
-              className="translate-x-1 absolute right-5 top-6 phone:hidden"
+              className="translate-x-1 absolute right-5 top-6 phone:hidden h-[40px] w-auto"
             />
           </div>
           <ul className="list-none mx-0 grid gap-7 mt-10 ml-10">
