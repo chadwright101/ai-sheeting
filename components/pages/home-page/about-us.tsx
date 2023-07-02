@@ -1,7 +1,7 @@
 import ImageContainer from "@/components/utils/image-container";
+import Button from "@/components/button";
 
 import pageData from "../../../data/page-data.json";
-import Button from "@/components/button";
 
 interface Props {
   cssClasses?: string;

@@ -3,7 +3,9 @@ import Head from "next/head";
 import Testimonials from "@/components/pages/projects-page/testimonials";
 import ProjectsSlider from "@/components/sliders/project-slider";
 
-import { projectsPage } from "@/data/page-data.json";
+import pageData from "@/data/page-data.json";
+
+const { projectsPage } = pageData;
 
 const Projects = () => {
   return (

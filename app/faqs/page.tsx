@@ -3,7 +3,9 @@ import Head from "next/head";
 
 import ImageContainer from "@/components/utils/image-container";
 
-import { faqs } from "@/data/page-data.json";
+import pageData from "@/data/page-data.json";
+
+const { faqs } = pageData;
 
 const Faqs = () => {
   return (

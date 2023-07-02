@@ -26,7 +26,7 @@ const ProjectsSlider = ({ sliderData, cssClasses }) => {
           speed: 1500,
           interval: 10000,
           autoplay: true,
-          dragMinThreshold: { mouse: 50, touch: 200 },
+          dragMinThreshold: { mouse: 50, touch: 150 },
           pauseOnFocus: true,
           gap: "1rem",
           breakpoints: {
