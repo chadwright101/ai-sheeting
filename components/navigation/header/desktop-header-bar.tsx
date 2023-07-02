@@ -2,6 +2,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import ImageContainer from "@/components/utils/image-container";
+import useScrollPosition from "@/components/utils/scroll-position";
 
 import navList from "@/data/navigation-data.json";
 import classNames from "classnames";
@@ -11,12 +12,18 @@ interface Props {
 }
 
 const DesktopHeaderBar = ({ cssClasses }: Props) => {
+  const scrollPosition = useScrollPosition();
   const pathName = usePathname();
   return (
     <div
       className={`justify-between items-center w-full h-[148px] ${cssClasses}`}
     >
-      <Link href="/" className="w-[162px] h-[100px]">
+      <Link
+        href="/"
+        className={classNames("w-[162px] h-[100px]", {
+          "w-[120px] h-[auto]": scrollPosition > 0,
+        })}
+      >
         <ImageContainer
           src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/a&i-builder-logo.png"
           alt="A&I Sheeting logo"
@@ -28,7 +35,14 @@ const DesktopHeaderBar = ({ cssClasses }: Props) => {
           desktopSmall={30}
           desktop={30}
         />
-        <h6 className="font-Ovo text-[15px] absolute -translate-y-[23px] translate-x-[40.5px]">
+        <h6
+          className={classNames(
+            "font-Ovo text-[15px] absolute -translate-y-[23px] translate-x-[40.5px]",
+            {
+              "text-[11px]": scrollPosition > 0,
+            }
+          )}
+        >
           Established 1976
         </h6>
       </Link>
