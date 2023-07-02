@@ -4,7 +4,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import SlicedText from "../../utils/sliced-text";
 
-import { projectsPage } from "../../../data/page-data.json";
+import pageData from "../../../data/page-data.json";
 
 import "@splidejs/react-splide/css/core";
 
@@ -12,7 +12,9 @@ interface Props {
   cssClasses?: string;
 }
 
-const { testimonials } = projectsPage;
+const {
+  projectsPage: { testimonials },
+} = pageData;
 
 const Testimonials = ({ cssClasses }: Props) => {
   return (

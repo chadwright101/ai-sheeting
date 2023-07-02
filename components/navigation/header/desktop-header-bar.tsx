@@ -16,38 +16,43 @@ const DesktopHeaderBar = ({ cssClasses }: Props) => {
   const pathName = usePathname();
   return (
     <div
-      className={`justify-between items-center w-full h-[148px] ${cssClasses}`}
+      className={`justify-between items-center w-full ease-in-out duration-500 ${
+        scrollPosition > 0 ? "h-[85px]" : "h-[148px]"
+      } ${cssClasses}`}
     >
       <Link
         href="/"
-        className={classNames("w-[162px] h-[100px]", {
-          "w-[120px] h-[auto]": scrollPosition > 0,
-        })}
+        className={`ease-in-out duration-500 ${
+          scrollPosition > 0 ? "w-[80px] h-auto" : "w-[162px] h-auto"
+        }`}
       >
         <ImageContainer
           src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/a&i-builder-logo.png"
           alt="A&I Sheeting logo"
           width={110}
           height={75}
-          cssClasses="object-cover object-left-bottom w-full h-full"
+          cssClasses="w-full h-full"
           eager
           tabletLarge={30}
           desktopSmall={30}
           desktop={30}
         />
         <h6
-          className={classNames(
-            "font-Ovo text-[15px] absolute -translate-y-[23px] translate-x-[40.5px]",
-            {
-              "text-[11px]": scrollPosition > 0,
-            }
-          )}
+          className={`font-Ovo absolute ease-in-out duration-500  ${
+            scrollPosition > 0
+              ? "text-[7.5px] -translate-y-[12.5px] translate-x-[21px]"
+              : "text-[15px] -translate-y-[23px] translate-x-[40.5px]"
+          }`}
         >
           Established 1976
         </h6>
       </Link>
       <nav className="desktop:translate-x-3">
-        <ul className="list-none m-0 flex gap-7 items-end mt-5">
+        <ul
+          className={`list-none m-0 flex gap-7 items-end ease-in-out duration-500 ${
+            scrollPosition > 0 ? "-mt-7" : "mt-4"
+          }`}
+        >
           {navList.map(({ title, url }, index) => (
             <li
               key={index}
@@ -61,7 +66,7 @@ const DesktopHeaderBar = ({ cssClasses }: Props) => {
                 className={classNames(
                   `text-white ${
                     title === "Get A Free Roof Inspection"
-                      ? "font-500 hover:text-black"
+                      ? "font-500 p-2 -m-2 hover:text-black"
                       : "font-[325]"
                   }`,
                   {
