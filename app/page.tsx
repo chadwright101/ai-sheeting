@@ -1,6 +1,7 @@
 "use client";
 
 import Head from "next/head";
+import { lazy, Suspense } from "react";
 
 import AboutUs from "@/components/pages/home-page/about-us";
 import ContactInfo from "@/components/contact/contact-info";
@@ -10,10 +11,11 @@ import VideoHero from "@/components/pages/home-page/video-hero";
 import WhatWeAreAbout from "@/components/pages/home-page/what-we-are-about";
 import ImageContainer from "@/components/utils/image-container";
 import ContactForm from "@/components/contact/contact-form";
-import ContactMap from "@/components/contact/contact-map";
 import { useGlobalContext } from "@/components/utils/global-context";
 
 import classNames from "classnames";
+
+const LazyContactMap = lazy(() => import("@/components/contact/contact-map"));
 
 export default function Home() {
   const { showName } = useGlobalContext();
@@ -92,7 +94,7 @@ export default function Home() {
               "tabletLarge:row-span-2": showName,
             })}
           />
-          <ContactMap cssClasses="w-full h-[280px] phone:h-[325px] tablet:h-[375px] tabletLarge:h-[450px]" />
+          <LazyContactMap cssClasses="w-full h-[280px] phone:h-[325px] tablet:h-[375px] tabletLarge:h-[450px]" />
         </div>
       </div>
     </>
