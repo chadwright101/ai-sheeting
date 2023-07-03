@@ -1,8 +1,10 @@
+"use client";
+
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
-import SlicedText from "../../utils/sliced-text";
+import SlicedText from "@/components/utils/sliced-text";
 
-import pageData from "../../../data/page-data.json";
+import pageData from "@/data/page-data.json";
 
 import "@splidejs/react-splide/css/core";
 
