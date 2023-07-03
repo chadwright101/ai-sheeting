@@ -1,47 +1,25 @@
-"use client";
-
-import Head from "next/head";
+import { Metadata } from "next";
 
 import ContactForm from "@/components/contact/contact-form";
 import ImageContainer from "@/components/utils/image-container";
-import { useGlobalContext } from "@/components/utils/global-context";
+import ClientSideImageComponent from "@/components/pages/free-quote/client-side-image-component";
 
-import classNames from "classnames";
+export const metadata: Metadata = {
+  title: "Free Roof Inspection Quote - A&I Sheeting",
+  openGraph: {
+    title: "Free Roof Inspection Quote - A&I Sheeting",
+    url: "https://www.roofrefub.co.za/free-quote",
+    images: [
+      {
+        url: "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/old+website/IMG_1151.jpg",
+      },
+    ],
+  },
+};
 
 const FreeQuote = () => {
-  const { showName, showMessage } = useGlobalContext();
   return (
     <>
-      <Head>
-        <title>Free Roof Inspection Quote - A&I Sheeting</title>
-        <meta
-          name="description"
-          content="First established in 1976, with a combined in-house experience of over 100 years,  A&I specialises in providing Industrial roofing solutions for Gauteng and beyond. We offer professional assistance in the refurbishment, replacement and redesign of roofing, insulation, cladding, gutters (Steel box gutters and eave gutters), downpipes, ventilation, asbestos removal, waterproofing and coating systems to suit the building as well as its user."
-        />
-        <meta
-          name="keywords"
-          content="A&I Sheeting, AI sheeting, roof refurbishers, johannesburg, Industrial roofing solutions, roof refurbishment, roof replacement,redesign roof, roofing, insulation, cladding, gutters, Steel box gutters, eave gutters, downpipes, ventilation, asbestos removal, waterproofing, coating systems, Gauteng, South Africa"
-        />
-        <meta
-          property="og:image"
-          content="https://ai-sheeting-git-development-chadwright101.vercel.app/_next/image?url=https%3A%2F%2Fthe-wright-designs-website-images.s3.af-south-1.amazonaws.com%2Fai-sheeting%2Fprojects%2Favenge-2%2FDJI_0684.jpg"
-        />
-        <meta
-          property="og:title"
-          content="Free Roof Inspection Quote - A&I Sheeting"
-        />
-        <meta property="og:url" content="https://www.roofrefub.co.za" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:description"
-          content="First established in 1976, with a combined in-house experience of over 100 years,  A&I specialises in providing Industrial roofing solutions for Gauteng and beyond. We offer professional assistance in the refurbishment, replacement and redesign of roofing, insulation, cladding, gutters (Steel box gutters and eave gutters), downpipes, ventilation, asbestos removal, waterproofing and coating systems to suit the building as well as its user."
-        />
-        <meta
-          property="og:site_name"
-          content="Free Roof Inspection Quote - A&I Sheeting"
-        />
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></link>
-      </Head>
       <main>
         <h1 className="mb-10 tabletLarge:text-left">
           Free Roof Inspection Quote
@@ -53,23 +31,7 @@ const FreeQuote = () => {
               your Free Roof Inspection...
             </p>
             <ContactForm freeQuote cssClasses="" />
-            <ImageContainer
-              src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/jt-pics/DJI_0645.jpg"
-              alt="A&I Sheeting - Free Roof Inspection Quote"
-              width={700}
-              height={500}
-              smallest={100}
-              phone={100}
-              tablet={80}
-              tabletLarge={50}
-              desktopSmall={40}
-              desktop={30}
-              cssClasses={classNames("object-cover h-[300px] w-full", {
-                "tabletLarge:h-[250px]": showName && !showMessage,
-                "tabletLarge:hidden": showMessage && showMessage,
-              })}
-              eager
-            />
+            <ClientSideImageComponent />
           </div>
           <ImageContainer
             src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/old website/IMG_1151.jpg"
