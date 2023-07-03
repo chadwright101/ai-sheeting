@@ -25,7 +25,11 @@ const ContactForm = ({ cssClasses, freeQuote }: Props) => {
           !freeQuote ? "mt-12 mb-8" : ""
         } tabletLarge:mx-0`}
       >
-        <form action="" method="POST" className="flex flex-col gap-8">
+        <form
+          action="https://formsubmit.co/info@roofrefurb.co.za"
+          method="POST"
+          className="flex flex-col gap-8"
+        >
           <input type="hidden" name="_gotcha" className="hidden" />
           <input
             type="text"
