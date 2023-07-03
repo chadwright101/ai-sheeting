@@ -16,7 +16,11 @@ const ContactForm = ({ cssClasses, freeQuote }: Props) => {
     useGlobalContext();
 
   return (
-    <div className={`${cssClasses}`}>
+    <div
+      className={classNames(`${cssClasses}`, {
+        "tabletLarge:row-span-2": showName,
+      })}
+    >
       <h5 className={`font-500 text-[24px] ${!freeQuote ? "" : "hidden"}`}>
         Get a quote now!
       </h5>

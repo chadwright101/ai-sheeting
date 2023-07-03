@@ -10,7 +10,7 @@ interface Props {
 
 const Footer = ({ cssClasses }: Props) => {
   return (
-    <footer className={`${cssClasses} mt-10 mb-4`}>
+    <footer className={`${cssClasses} mt-10 mb-4 tabletLarge:mb-12`}>
       <div className="max-w-[1400px] h-full px-5 tabletLarge:px-10 tabletLarge:mx-auto desktop:px-0">
         <div className="grid grid-cols-2 gap-y-4 pt-10 h-[134px] border-t-2 border-black tabletLarge:grid-cols-[1fr_83px_143px] tabletLarge:gap-x-8 tabletLarge:h-[249px]">
           <nav className="hidden tabletLarge:block">

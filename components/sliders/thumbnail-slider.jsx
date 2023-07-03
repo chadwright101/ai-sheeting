@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef } from "react";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";

@@ -1,5 +1,3 @@
-"use client";
-
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import SlicedText from "../../utils/sliced-text";

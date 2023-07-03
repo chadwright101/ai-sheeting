@@ -1,3 +1,5 @@
+"use client";
+
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 
 interface Props {
