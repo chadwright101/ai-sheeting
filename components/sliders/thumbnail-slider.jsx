@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
@@ -14,6 +14,13 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
   useEffect(() => {
     slider1.current.sync(slider2.current.splide);
   }, [slider1, slider2]);
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleSlideChange = (index) => {
+    slider1.current.go(index);
+    setActiveIndex(index);
+  };
   return (
     <div className={`w-full overflow-hidden ${cssClasses}`}>
       {/* slider */}
@@ -23,63 +30,23 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
           pagination: false,
           speed: 1500,
           interval: 6500,
-          autoplay: true,
           dragMinThreshold: { mouse: 50, touch: 150 },
           gap: "1rem",
+          arrows: false,
           fixedHeight: 600,
+          drag: false,
           breakpoints: {
             1200: {
               fixedHeight: 550,
             },
             1050: {
-              arrows: false,
               fixedHeight: 450,
-            },
-            800: {
-              fixedHeight: 350,
-            },
-            425: {
-              fixedHeight: 325,
             },
           },
         }}
-        className="w-full h-[325px] phone:h-[350px] tablet:h-[450px] tabletLarge:h-[525px] desktopSmall:h-[550px]"
+        className="w-full h-[525px] desktopSmall:h-[550px]"
         ref={(slider) => (slider1.current = slider)}
       >
-        <div className="splide__arrows splide__arrows--ltr">
-          <button
-            className="splide__arrow splide__arrow--prev"
-            type="button"
-            aria-label="Previous slide"
-            aria-controls="splide02-track"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 40 40"
-              width="35"
-              height="35"
-              focusable="false"
-            >
-              <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
-            </svg>
-          </button>
-          <button
-            className="splide__arrow splide__arrow--next"
-            type="button"
-            aria-label="Next slide"
-            aria-controls="splide02-track"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 40 40"
-              width="35"
-              height="35"
-              focusable="false"
-            >
-              <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
-            </svg>
-          </button>
-        </div>
         {imageList.map((item, index) => (
           <SplideSlide key={index} className="h-full w-full">
             <ImageContainer
@@ -104,10 +71,10 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
       <Splide
         options={{
           type: "slide",
-          rewind: true,
           pagination: false,
           fixedWidth: 190,
           fixedHeight: 110,
+          drag: false,
           cover: true,
           focus: "center",
           arrows: false,
@@ -125,12 +92,14 @@ const ThumbnailSlider = ({ imageList, cssClasses }) => {
                 alt={`A&I Sheeting - Gallery thumbnail image ${index + 1}`}
                 width={200}
                 height={200}
-                cssClasses="object-cover h-full w-full cursor-pointer px-1 pt-2"
+                cssClasses={`object-cover h-full w-full cursor-pointer px-1 pt-2 hover:scale-95 duration-300 ease-in-out ${
+                  index !== activeIndex ? "opacity-60" : ""
+                }`}
                 quality={40}
                 tabletLarge={12.5}
                 desktopSmall={12.5}
                 desktop={12.5}
-                onClick={() => slider1.current.go(index)}
+                onClick={() => handleSlideChange(index)}
               />
             </div>
           </SplideSlide>
