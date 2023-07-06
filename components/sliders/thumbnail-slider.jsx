@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
-import "@splidejs/react-splide/css/core";
 import ImageContainer from "../utils/image-container";
 
 const ThumbnailSlider = ({ imageList, cssClasses }) => {

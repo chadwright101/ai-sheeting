@@ -37,7 +37,7 @@ const Testimonials = ({ cssClasses }: Props) => {
                 <h6 className="text-center mb-8 tabletLarge:text-left">
                   {title}
                 </h6>
-                <div className="tabletLarge:hidden">
+                <div className="tabletLarge:hidden my-4">
                   <SlicedText
                     maxLength={300}
                     paragraph1={paragraph1}
@@ -62,7 +62,7 @@ const Testimonials = ({ cssClasses }: Props) => {
                     {paragraph3}
                     <span className={!paragraph3 ? "hidden" : ""}>&rdquo;</span>
                   </p>
-                  <p className="text-left italic font-[400] mt-4">{client}</p>
+                  <p className="text-left italic font-[400] my-4">{client}</p>
                 </div>
               </div>
             </SplideSlide>
