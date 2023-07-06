@@ -7,7 +7,6 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import ImageContainer from "../utils/image-container";
 
 import "@splidejs/splide/css";
-import SlicedText from "../utils/sliced-text";
 
 const ProjectsSlider = ({ sliderData, cssClasses }) => {
   const slider1 = useRef();

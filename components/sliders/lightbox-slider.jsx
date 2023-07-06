@@ -3,10 +3,12 @@
 import Image from "next/image";
 import React, { useEffect, useState, useRef } from "react";
 
+import ImageContainer from "../utils/image-container";
+
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import classNames from "classnames";
 
-import ImageContainer from "../utils/image-container";
+import "@splidejs/splide/css";
 
 const LightboxSlider = ({ imageList, cssClasses }) => {
   const slider1 = useRef();

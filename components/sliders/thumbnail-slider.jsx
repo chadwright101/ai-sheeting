@@ -6,6 +6,8 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import ImageContainer from "../utils/image-container";
 
+import "@splidejs/splide/css";
+
 const ThumbnailSlider = ({ imageList, cssClasses }) => {
   const slider1 = useRef();
   const slider2 = useRef();
