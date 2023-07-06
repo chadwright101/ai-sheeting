@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useGlobalContext } from "./global-context";
 
 interface Props {
   maxLength: number;
@@ -23,7 +23,7 @@ const SlicedText = ({
   quotations,
   client,
 }: Props) => {
-  const [readMore, setReadMore] = useState(false);
+  const { readMore, setReadMore } = useGlobalContext();
   const truncated = paragraph1.slice(0, maxLength) + "...";
   {
     return (

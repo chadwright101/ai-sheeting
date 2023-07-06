@@ -6,7 +6,6 @@ import React, { useEffect, useState, useRef } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import classNames from "classnames";
 
-import "@splidejs/react-splide/css/core";
 import ImageContainer from "../utils/image-container";
 
 const LightboxSlider = ({ imageList, cssClasses }) => {
@@ -44,6 +43,7 @@ const LightboxSlider = ({ imageList, cssClasses }) => {
             breakpoints: {
               1050: {
                 arrows: false,
+                pagination: true,
               },
             },
           }}

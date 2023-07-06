@@ -19,12 +19,14 @@ interface ContextProps {
   showPhone2: boolean;
   showEmail: boolean;
   menuToggle: boolean;
+  readMore: boolean;
   setShowName: Dispatch<boolean>;
   setShowMessage: Dispatch<boolean>;
   setShowPhone1: Dispatch<boolean>;
   setShowPhone2: Dispatch<boolean>;
   setShowEmail: Dispatch<boolean>;
   setMenuToggle: Dispatch<boolean>;
+  setReadMore: Dispatch<boolean>;
   dispatch: Dispatch<Action>;
 }
 
@@ -40,6 +42,7 @@ const initialState = {
   showPhone2: false,
   showEmail: false,
   menuToggle: false,
+  readMore: false,
 };
 
 const reducer = (state: typeof initialState, action: Action) => {
@@ -56,6 +59,8 @@ const reducer = (state: typeof initialState, action: Action) => {
       return { ...state, showEmail: action.payload };
     case "SET_MENU_TOGGLE":
       return { ...state, menuToggle: action.payload };
+    case "SET_READ_MORE":
+      return { ...state, readMore: action.payload };
     default:
       throw new Error(`Unhandled action type: ${action.type}`);
   }
@@ -68,12 +73,14 @@ const GlobalContext = createContext<ContextProps>({
   showPhone2: false,
   showEmail: false,
   menuToggle: false,
+  readMore: false,
   setShowName: () => {},
   setShowMessage: () => {},
   setShowPhone1: () => {},
   setShowPhone2: () => {},
   setShowEmail: () => {},
   setMenuToggle: () => {},
+  setReadMore: () => {},
   dispatch: () => {},
 });
 
@@ -114,9 +121,23 @@ export const GlobalContextProvider = ({ children }: Props) => {
       payload: value,
     });
   };
+  const setReadMore = (value: boolean) => {
+    dispatch({
+      type: "SET_READ_MORE",
+      payload: value,
+    });
+  };
 
   const [
-    { showName, showMessage, showPhone1, showPhone2, showEmail, menuToggle },
+    {
+      showName,
+      showMessage,
+      showPhone1,
+      showPhone2,
+      showEmail,
+      menuToggle,
+      readMore,
+    },
     dispatch,
   ] = useReducer(reducer, initialState);
 
@@ -129,12 +150,14 @@ export const GlobalContextProvider = ({ children }: Props) => {
         showPhone2,
         showEmail,
         menuToggle,
+        readMore,
         setShowName,
         setShowMessage,
         setShowPhone1,
         setShowPhone2,
         setShowEmail,
         setMenuToggle,
+        setReadMore,
         dispatch,
       }}
     >

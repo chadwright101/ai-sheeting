@@ -6,7 +6,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import ImageContainer from "../utils/image-container";
 
-import "@splidejs/react-splide/css/core";
+import "@splidejs/splide/css";
 import SlicedText from "../utils/sliced-text";
 
 const ProjectsSlider = ({ sliderData, cssClasses }) => {
@@ -16,6 +16,7 @@ const ProjectsSlider = ({ sliderData, cssClasses }) => {
   useEffect(() => {
     slider1.current.sync(slider2.current.splide);
   }, [slider1, slider2]);
+
   return (
     <div className={`w-full ${cssClasses}`}>
       {/* slider */}
@@ -24,13 +25,14 @@ const ProjectsSlider = ({ sliderData, cssClasses }) => {
           type: "loop",
           pagination: false,
           speed: 1500,
-          interval: 10000,
+          interval: 6500,
           autoplay: true,
           dragMinThreshold: { mouse: 50, touch: 150 },
           pauseOnFocus: true,
           gap: "1rem",
           breakpoints: {
             1050: {
+              pagination: true,
               arrows: false,
             },
           },
@@ -40,7 +42,7 @@ const ProjectsSlider = ({ sliderData, cssClasses }) => {
       >
         {sliderData.map(
           ({ imageUrl, title, paragraph1, paragraph2, paragraph3 }, index) => (
-            <SplideSlide key={index} className="h-full w-full">
+            <SplideSlide key={index} className="w-full">
               <ImageContainer
                 src={imageUrl}
                 alt={`A&I Sheeting - Project image ${index + 1}`}
@@ -56,17 +58,13 @@ const ProjectsSlider = ({ sliderData, cssClasses }) => {
                 desktopSmall={55}
                 desktop={50}
               />
-              <article className="grid gap-6 tabletLarge:hidden">
+              <article className="flex flex-col gap-6 tabletLarge:hidden h-auto mb-10">
                 <h4 className="text-center mt-10 tabletLarge:text-left">
                   {title}
                 </h4>
-                <SlicedText
-                  paragraph1={paragraph1}
-                  paragraph2={paragraph2 && paragraph2}
-                  paragraph3={paragraph3 && paragraph3}
-                  maxLength={200}
-                  cssClasses="text-center mx-8"
-                />
+                <p className="text-center mx-8">{paragraph1}</p>
+                <p className="text-center mx-8">{paragraph2 && paragraph2}</p>
+                <p className="text-center mx-8">{paragraph3 && paragraph3}</p>
               </article>
             </SplideSlide>
           )
