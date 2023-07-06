@@ -32,7 +32,7 @@ const Projects = () => {
         <h1 className="mb-10">Projects</h1>
         <ProjectsSlider
           sliderData={projectsPage.slider}
-          cssClasses="tabletLarge:grid grid-cols-2 gap-x-14"
+          cssClasses="flex flex-col gap-y-8 tabletLarge:grid grid-cols-2 gap-x-14"
         />
         <hr className="my-14 tabletLarge:hidden" />
         <Testimonials cssClasses="tabletLarge:mt-28" />

@@ -24,50 +24,33 @@ const ProjectsSlider = ({ sliderData, cssClasses }) => {
           type: "loop",
           pagination: false,
           speed: 1500,
-          interval: 6500,
+          interval: 10000,
           autoplay: true,
           dragMinThreshold: { mouse: 50, touch: 150 },
           pauseOnFocus: true,
           gap: "1rem",
-          breakpoints: {
-            1050: {
-              pagination: true,
-              arrows: false,
-            },
-          },
         }}
         className="w-full"
         ref={(slider) => (slider1.current = slider)}
       >
-        {sliderData.map(
-          ({ imageUrl, title, paragraph1, paragraph2, paragraph3 }, index) => (
-            <SplideSlide key={index} className="w-full">
-              <ImageContainer
-                src={imageUrl}
-                alt={`A&I Sheeting - Project image ${index + 1}`}
-                width={900}
-                height={500}
-                cssClasses="object-cover w-full h-[275px] phone:h-[300px] tablet:h-[375px] tabletLarge:h-[400px] desktopSmall:h-[425px] desktop:h-[450px]"
-                onClick={() => slider1.current.go(index)}
-                eager={index < 1 ? true : false}
-                smallest={100}
-                phone={90}
-                tablet={85}
-                tabletLarge={50}
-                desktopSmall={55}
-                desktop={50}
-              />
-              <article className="flex flex-col gap-6 tabletLarge:hidden h-auto mb-10">
-                <h4 className="text-center mt-10 tabletLarge:text-left">
-                  {title}
-                </h4>
-                <p className="text-center mx-8">{paragraph1}</p>
-                <p className="text-center mx-8">{paragraph2 && paragraph2}</p>
-                <p className="text-center mx-8">{paragraph3 && paragraph3}</p>
-              </article>
-            </SplideSlide>
-          )
-        )}
+        {sliderData.map(({ imageUrl }, index) => (
+          <SplideSlide key={index} className="w-full">
+            <ImageContainer
+              src={imageUrl}
+              alt={`A&I Sheeting - Project image ${index + 1}`}
+              width={900}
+              height={500}
+              cssClasses="object-cover w-full h-[275px] phone:h-[300px] tablet:h-[375px] tabletLarge:h-[400px] desktopSmall:h-[425px] desktop:h-[450px]"
+              eager={index < 1 ? true : false}
+              smallest={100}
+              phone={90}
+              tablet={85}
+              tabletLarge={50}
+              desktopSmall={55}
+              desktop={50}
+            />
+          </SplideSlide>
+        ))}
       </Splide>
 
       {/* project info */}
@@ -77,9 +60,9 @@ const ProjectsSlider = ({ sliderData, cssClasses }) => {
           pagination: false,
           arrows: false,
           snap: true,
+          drag: false,
         }}
         ref={(slider) => (slider2.current = slider)}
-        className="hidden tabletLarge:block"
       >
         {sliderData.map(
           ({ title, paragraph1, paragraph2, paragraph3 }, index) => (
