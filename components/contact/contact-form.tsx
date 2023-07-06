@@ -1,10 +1,13 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+
 import Button from "../button";
 import { useGlobalContext } from "../utils/global-context";
 import ImageContainer from "../utils/image-container";
 
 import classNames from "classnames";
+import path from "path";
 
 interface Props {
   cssClasses?: string;
@@ -14,6 +17,8 @@ interface Props {
 const ContactForm = ({ cssClasses, freeQuote }: Props) => {
   const { showName, showMessage, setShowName, setShowMessage } =
     useGlobalContext();
+
+  const pathName = usePathname();
 
   return (
     <div
@@ -38,7 +43,11 @@ const ContactForm = ({ cssClasses, freeQuote }: Props) => {
           <input
             type="text"
             name="subject"
-            defaultValue="Home page contact form query - www.roofrefurb.co.za"
+            defaultValue={
+              pathName === "/"
+                ? "Home page contact form query - www.roofrefurb.co.za"
+                : "Free roof inspection quote query - www.roofrefurb.co.za"
+            }
             className="hidden"
           />
           <div className="flex flex-col gap-8">
