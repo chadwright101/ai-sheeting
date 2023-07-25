@@ -35,11 +35,11 @@ const VideoHero = ({ cssClasses }: Props) => {
       >
         <source
           type="video/webm"
-          data-src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/videos/ai-sheeting-feature-video.webm"
+          data-src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/videos/ai-sheeting-hero-video.webm"
         />
         <source
           type="video/mp4"
-          data-src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/videos/ai-sheeting-feature-video.mp4"
+          data-src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/videos/ai-sheeting-hero-video.mp4"
         />
       </video>
     </section>
