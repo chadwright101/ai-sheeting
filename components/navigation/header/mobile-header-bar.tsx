@@ -22,7 +22,7 @@ const MobileHeaderBar = ({ cssClasses }: Props) => {
 
   const ref = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+  /* useEffect(() => {
     const handleOutSideClick = (event: MouseEvent) => {
       if (ref.current && !ref.current.contains(event.target as Node)) {
         setMenuToggle(false);
@@ -34,7 +34,7 @@ const MobileHeaderBar = ({ cssClasses }: Props) => {
     return () => {
       window.removeEventListener("mousedown", handleOutSideClick);
     };
-  }, [ref]);
+  }, [ref]); */
 
   useEffect(() => {
     if (menuToggle) {
