@@ -18,14 +18,14 @@ const DesktopHeaderBar = ({ cssClasses }: Props) => {
   const pathName = usePathname();
   return (
     <div
-      className={`justify-between items-center w-full ease-in-out duration-500 ${
-        scrollPosition > 0 ? "h-[85px]" : "h-[148px]"
+      className={`justify-between items-center w-full ease-in-out duration-500 h-[148px] ${
+        scrollPosition > 25 ? "translate-y-8" : ""
       } ${cssClasses}`}
     >
       <Link
         href="/"
-        className={`ease-in-out duration-500 ${
-          scrollPosition > 0 ? "w-[80px] h-auto" : "w-[162px] h-auto"
+        className={`ease-in-out duration-500 w-[162px] h-auto ${
+          scrollPosition > 25 ? "scale-50" : ""
         }`}
       >
         <ImageContainer
@@ -39,13 +39,7 @@ const DesktopHeaderBar = ({ cssClasses }: Props) => {
           desktopSmall={30}
           desktop={30}
         />
-        <h6
-          className={`font-Ovo absolute ease-in-out duration-500  ${
-            scrollPosition > 0
-              ? "text-[7.5px] -translate-y-[12.5px] translate-x-[21px]"
-              : "text-[15px] -translate-y-[23px] translate-x-[40.5px]"
-          }`}
-        >
+        <h6 className="font-Ovo absolute ease-in-out text-[15px] -translate-y-[23px] translate-x-[40.5px]">
           Established 1976
         </h6>
       </Link>
