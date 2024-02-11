@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 
 import { useGlobalContext } from "../utils/global-context";
 
 import pageData from "../../data/page-data.json";
+import { showEmailAddress, showPhoneNumbers } from "@/app/actions";
 
 interface Props {
   cssClasses?: string;
@@ -12,19 +14,14 @@ interface Props {
 
 const {
   homePage: {
-    contactUs: { phone1, phone1Display, phone2, phone2Display, email, address },
+    contactUs: { address },
   },
 } = pageData;
 
 const ContactInfo = ({ cssClasses }: Props) => {
-  const {
-    showPhone1,
-    setShowPhone1,
-    showPhone2,
-    setShowPhone2,
-    showEmail,
-    setShowEmail,
-  } = useGlobalContext();
+  const [showPhone1, setShowPhone1] = useState("");
+  const [showPhone2, setShowPhone2] = useState("");
+  const [showEmail, setShowEmail] = useState("");
 
   return (
     <div className={`grid gap-10 ${cssClasses}`}>
@@ -32,59 +29,65 @@ const ContactInfo = ({ cssClasses }: Props) => {
       <ul className="flex flex-col gap-7 tabletLarge:gap-4 m-0">
         <li className="grid grid-cols-[110px_1fr]">
           <p className="font-500">Phone:</p>
-          {!showPhone1 && (
+          {!showPhone1 ? (
             <p
               className="italic p-3 -m-3 text-linkBlue tabletLarge:hover:cursor-pointer tabletLarge:hover:text-orange tabletLarge:p-0 tabletLarge:m-0"
-              onClick={() => setShowPhone1(true)}
+              onClick={async () => {
+                const data = await showPhoneNumbers();
+                setShowPhone1(data.phone1);
+              }}
             >
               Show phone number
             </p>
-          )}
-          {showPhone1 && (
+          ) : (
             <Link
-              href={`tel:${phone1}`}
+              href={`tel:${showPhone1}`}
               className="p-3 -m-3 tabletLarge:p-0 tabletLarge:m-0"
             >
-              {phone1Display}
+              {showPhone1}
             </Link>
           )}
         </li>
         <li className="grid grid-cols-[110px_1fr]">
           <p className="font-500">Alt. Phone:</p>
-          {!showPhone2 && (
+          {!showPhone2 ? (
             <p
               className="italic p-3 -m-3 text-linkBlue tabletLarge:hover:cursor-pointer tabletLarge:hover:text-orange tabletLarge:p-0 tabletLarge:m-0"
-              onClick={() => setShowPhone2(true)}
+              onClick={async () => {
+                const data = await showPhoneNumbers();
+                setShowPhone2(data.phone2);
+              }}
             >
               Show phone number
             </p>
-          )}
-          {showPhone2 && (
+          ) : (
             <Link
-              href={`tel:${phone2}`}
+              href={`tel:${showPhone2}`}
               className="p-3 -m-3 tabletLarge:p-0 tabletLarge:m-0"
             >
-              {phone2Display}
+              {showPhone2}
             </Link>
           )}
         </li>
 
         <li className="grid grid-cols-[110px_1fr]">
           <p className="font-500">Email:</p>
-          {!showEmail && (
+          {!showEmail ? (
             <p
               className="italic p-3 -m-3 text-linkBlue tabletLarge:hover:cursor-pointer tabletLarge:hover:text-orange tabletLarge:p-0 tabletLarge:m-0"
-              onClick={() => setShowEmail(true)}
+              onClick={async () => {
+                const email = await showEmailAddress();
+                setShowEmail(email);
+              }}
             >
               Show email address
             </p>
-          )}
-          {showEmail && (
+          ) : (
             <Link
-              href={`mailto:${email}`}
+              href={`mailto:${showEmail}`}
               className="p-3 -m-3 tabletLarge:p-0 tabletLarge:m-0"
             >
-              {email}
+              {showEmail}
             </Link>
           )}
         </li>

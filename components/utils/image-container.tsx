@@ -53,7 +53,7 @@ const ImageContainer = ({
       className={cssClasses}
       onClick={onClick}
       onLoadStart={() => setLoading(true)}
-      onLoadingComplete={() => setLoading(false)}
+      onLoad={() => setLoading(false)}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       sizes={`(max-width: 425px) ${

@@ -1,5 +1,8 @@
+"use client";
+
 import { ReactNode } from "react";
 import Link from "next/link";
+import { useFormStatus } from "react-dom";
 
 interface Props {
   children?: ReactNode;
@@ -19,6 +22,8 @@ const Button = ({
   onClick,
   buttonWhite,
 }: Props) => {
+  const { pending } = useFormStatus();
+
   if (form) {
     return (
       <button
@@ -27,10 +32,17 @@ const Button = ({
           buttonWhite
             ? "bg-white tabletLarge:hover:bg-white/80"
             : "bg-orange tabletLarge:hover:bg-orange/80"
-        } ${cssClasses}`}
+        } ${pending && " cursor-not-allowed bg-white/80"} ${cssClasses}`}
         onClick={onClick}
+        disabled={pending}
       >
-        {children}
+        {pending ? (
+          <div className="flex justify-center items-center w-full h-[27px]">
+            <div className="animate-spin h-6 w-6 border-t-2 border-blue-500 rounded-full"></div>
+          </div>
+        ) : (
+          children
+        )}
       </button>
     );
   } else {

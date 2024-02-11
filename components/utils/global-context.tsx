@@ -15,16 +15,10 @@ interface Props {
 interface ContextProps {
   showName: boolean;
   showMessage: boolean;
-  showPhone1: boolean;
-  showPhone2: boolean;
-  showEmail: boolean;
   menuToggle: boolean;
   readMore: boolean;
   setShowName: Dispatch<boolean>;
   setShowMessage: Dispatch<boolean>;
-  setShowPhone1: Dispatch<boolean>;
-  setShowPhone2: Dispatch<boolean>;
-  setShowEmail: Dispatch<boolean>;
   setMenuToggle: Dispatch<boolean>;
   setReadMore: Dispatch<boolean>;
   dispatch: Dispatch<Action>;
@@ -38,9 +32,6 @@ interface Action {
 const initialState = {
   showName: false,
   showMessage: false,
-  showPhone1: false,
-  showPhone2: false,
-  showEmail: false,
   menuToggle: false,
   readMore: false,
 };
@@ -51,12 +42,6 @@ const reducer = (state: typeof initialState, action: Action) => {
       return { ...state, showName: action.payload };
     case "SET_SHOW_MESSAGE":
       return { ...state, showMessage: action.payload };
-    case "SET_SHOW_PHONE_1":
-      return { ...state, showPhone1: action.payload };
-    case "SET_SHOW_PHONE_2":
-      return { ...state, showPhone2: action.payload };
-    case "SET_SHOW_EMAIL":
-      return { ...state, showEmail: action.payload };
     case "SET_MENU_TOGGLE":
       return { ...state, menuToggle: action.payload };
     case "SET_READ_MORE":
@@ -69,16 +54,10 @@ const reducer = (state: typeof initialState, action: Action) => {
 const GlobalContext = createContext<ContextProps>({
   showName: false,
   showMessage: false,
-  showPhone1: false,
-  showPhone2: false,
-  showEmail: false,
   menuToggle: false,
   readMore: false,
   setShowName: () => {},
   setShowMessage: () => {},
-  setShowPhone1: () => {},
-  setShowPhone2: () => {},
-  setShowEmail: () => {},
   setMenuToggle: () => {},
   setReadMore: () => {},
   dispatch: () => {},
@@ -88,24 +67,6 @@ export const GlobalContextProvider = ({ children }: Props) => {
   const setShowName = (value: boolean) => {
     dispatch({
       type: "SET_SHOW_NAME",
-      payload: value,
-    });
-  };
-  const setShowPhone1 = (value: boolean) => {
-    dispatch({
-      type: "SET_SHOW_PHONE_1",
-      payload: value,
-    });
-  };
-  const setShowPhone2 = (value: boolean) => {
-    dispatch({
-      type: "SET_SHOW_PHONE_2",
-      payload: value,
-    });
-  };
-  const setShowEmail = (value: boolean) => {
-    dispatch({
-      type: "SET_SHOW_EMAIL",
       payload: value,
     });
   };
@@ -128,34 +89,18 @@ export const GlobalContextProvider = ({ children }: Props) => {
     });
   };
 
-  const [
-    {
-      showName,
-      showMessage,
-      showPhone1,
-      showPhone2,
-      showEmail,
-      menuToggle,
-      readMore,
-    },
-    dispatch,
-  ] = useReducer(reducer, initialState);
+  const [{ showName, showMessage, menuToggle, readMore }, dispatch] =
+    useReducer(reducer, initialState);
 
   return (
     <GlobalContext.Provider
       value={{
         showName,
         showMessage,
-        showPhone1,
-        showPhone2,
-        showEmail,
         menuToggle,
         readMore,
         setShowName,
         setShowMessage,
-        setShowPhone1,
-        setShowPhone2,
-        setShowEmail,
         setMenuToggle,
         setReadMore,
         dispatch,
