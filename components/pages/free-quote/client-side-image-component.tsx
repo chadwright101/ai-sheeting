@@ -9,7 +9,7 @@ const ClientSideImageComponent = () => {
   const { showName, showMessage } = useGlobalContext();
   return (
     <ImageContainer
-      src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/jt-pics/DJI_0645.jpg"
+      src="/assets/projects/jt-pics/DJI_0645.jpg"
       alt="A&I Sheeting - Free Roof Inspection Quote"
       width={700}
       height={500}

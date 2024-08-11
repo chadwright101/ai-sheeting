@@ -21,7 +21,7 @@ const SloganStamp = ({ cssClasses }: Props) => {
         <span className="font-[600] text-[40px] pl-1 leading-7">&rdquo;</span>
       </h3>
       <ImageContainer
-        src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/Since-1976-stamp.png"
+        src="/assets/Since-1976-stamp.png"
         alt="A&I Sheeting since 1976"
         width={212}
         height={212}

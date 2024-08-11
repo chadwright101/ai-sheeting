@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://www.roofrefub.co.za/projects",
     images: [
       {
-        url: "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/avenge-2/DJI_0684.jpg",
+        url: "/assets/projects/avenge-2/DJI_0684.jpg",
       },
     ],
   },

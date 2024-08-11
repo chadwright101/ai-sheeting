@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://www.roofrefub.co.za/services",
     images: [
       {
-        url: "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/avenge-2/DJI_0684.jpg",
+        url: "/assets/projects/avenge-2/DJI_0684.jpg",
       },
     ],
   },
@@ -47,7 +47,7 @@ const Services = () => {
             </ul>
           </article>
           <ImageContainer
-            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/118/DJI_0496.jpg"
+            src="/assets/projects/118/DJI_0496.jpg"
             alt="A&I Sheeting - State of the Art Technologies"
             width={1200}
             height={750}
@@ -77,7 +77,7 @@ const Services = () => {
             </ul>
           </article>
           <ImageContainer
-            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/brackenfell-jt-ross-ct/IMG_2162.jpg"
+            src="/assets/projects/brackenfell-jt-ross-ct/IMG_2162.jpg"
             alt="A&I Sheeting - Product/Service Guide"
             width={1200}
             height={750}
@@ -109,7 +109,7 @@ const Services = () => {
           </ul>
         </article>
         <ImageContainer
-          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/diesel-road/DJI_0636.jpg"
+          src="/assets/projects/diesel-road/DJI_0636.jpg"
           alt="A&I Sheeting - Articles"
           width={1200}
           height={750}

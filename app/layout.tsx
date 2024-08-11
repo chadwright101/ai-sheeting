@@ -12,6 +12,7 @@ interface Props {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.roofrefurb.co.za"),
   description:
     "First established in 1976, with a combined in-house experience of over 100 years,  A&I specialises in providing Industrial roofing solutions for Gauteng and beyond. We offer professional assistance in the refurbishment, replacement and redesign of roofing, insulation, cladding, gutters (Steel box gutters and eave gutters), downpipes, ventilation, asbestos removal, waterproofing and coating systems to suit the building as well as its user.",
   keywords:

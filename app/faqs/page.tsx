@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://www.roofrefub.co.za/faqs",
     images: [
       {
-        url: "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/avenge-2/DJI_0684.jpg",
+        url: "/assets/projects/avenge-2/DJI_0684.jpg",
       },
     ],
   },
@@ -43,7 +43,7 @@ const Faqs = () => {
           ))}
         </ul>
         <ImageContainer
-          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/DSC03266.jpg"
+          src="/assets/DSC03266.jpg"
           alt="A&I Sheeting - FAQs"
           width={1000}
           height={450}

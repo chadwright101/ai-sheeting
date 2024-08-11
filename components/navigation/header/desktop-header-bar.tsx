@@ -29,7 +29,7 @@ const DesktopHeaderBar = ({ cssClasses }: Props) => {
         }`}
       >
         <ImageContainer
-          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/a&i-builder-logo.png"
+          src="/assets/a&i-builder-logo.png"
           alt="A&I Sheeting logo"
           width={110}
           height={75}

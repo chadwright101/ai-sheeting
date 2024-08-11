@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://www.roofrefub.co.za/free-quote",
     images: [
       {
-        url: "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/old+website/IMG_1151.jpg",
+        url: "/assets/projects/old+website/IMG_1151.jpg",
       },
     ],
   },
@@ -39,7 +39,7 @@ const FreeQuote = () => {
             <ClientSideImageComponent />
           </div>
           <ImageContainer
-            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/old website/IMG_1151.jpg"
+            src="/assets/projects/old-website/IMG_1151.jpg"
             alt="A&I Sheeting - Free Roof Inspection Quote"
             height={900}
             width={750}

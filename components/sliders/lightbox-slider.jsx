@@ -56,7 +56,7 @@ const LightboxSlider = ({ imageList, cssClasses }) => {
             className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
           >
             <Image
-              src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/icons/close.svg"
+              src="/assets/icons/close.svg"
               alt="Close icon"
               width={55}
               height={55}

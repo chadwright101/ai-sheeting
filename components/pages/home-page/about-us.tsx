@@ -16,7 +16,7 @@ const AboutUs = ({ cssClasses }: Props) => {
     <article className={`flex flex-col gap-14 ${cssClasses}`}>
       <h2 className="tabletLarge:text-left">About Us</h2>
       <ImageContainer
-        src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/DSC03266.jpg"
+        src="/assets/DSC03266.jpg"
         alt="A&I Sheeting - About Us"
         width={1000}
         height={450}

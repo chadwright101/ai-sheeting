@@ -141,7 +141,7 @@ const ContactForm = ({ cssClasses, freeQuote }: Props) => {
         )}
       </section>
       <ImageContainer
-        src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/old website/20180720_113017.jpg"
+        src="/assets/projects/old-website/20180720_113017.jpg"
         alt="A&I Sheeting - Contact Us"
         width={700}
         height={500}

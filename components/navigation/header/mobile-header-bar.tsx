@@ -51,7 +51,7 @@ const MobileHeaderBar = ({ cssClasses }: Props) => {
       >
         <Link href="/" className="w-[96px] h-[61px]">
           <ImageContainer
-            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/a&i-builder-logo.png"
+            src="/assets/a&i-builder-logo.png"
             alt="A&I Sheeting logo"
             width={110}
             height={75}
@@ -71,7 +71,7 @@ const MobileHeaderBar = ({ cssClasses }: Props) => {
             className="cursor-pointer p-4 -m-4"
           >
             <Image
-              src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/icons/menu.svg"
+              src="/assets/icons/menu.svg"
               alt="Menu icon"
               width={30}
               height={30}
@@ -86,7 +86,7 @@ const MobileHeaderBar = ({ cssClasses }: Props) => {
             className="cursor-pointer p-4 -m-4"
           >
             <Image
-              src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/icons/close.svg"
+              src="/assets/icons/close.svg"
               alt="Menu icon"
               width={40}
               height={40}
@@ -106,7 +106,7 @@ const MobileHeaderBar = ({ cssClasses }: Props) => {
           className="cursor-pointer p-4 -m-4"
         >
           <Image
-            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/icons/close.svg"
+            src="/assets/icons/close.svg"
             alt="Menu icon"
             width={40}
             height={40}

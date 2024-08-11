@@ -26,13 +26,13 @@ export const metadata: Metadata = {
     url: "https://www.roofrefub.co.za",
     images: [
       {
-        url: "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/avenge-2/DJI_0684.jpg",
+        url: "/assets/projects/avenge-2/DJI_0684.jpg",
       },
       {
-        url: "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/diesel-road/DJI_0636.jpg",
+        url: "/assets/projects/diesel-road/DJI_0636.jpg",
       },
       {
-        url: "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/jt-pics/DJI_0645.jpg",
+        url: "/assets/projects/jt-pics/DJI_0645.jpg",
       },
     ],
   },
@@ -54,7 +54,7 @@ export default function Home() {
           <AboutUs />
         </div>
         <ImageContainer
-          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/avenge-2/DJI_0701.jpg"
+          src="/assets/projects/avenge-2/DJI_0701.jpg"
           alt="A&I Sheeting - What we're about"
           width={1000}
           height={450}

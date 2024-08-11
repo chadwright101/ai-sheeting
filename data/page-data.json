@@ -8,60 +8,60 @@
     ],
     "whatWeAreAbout": [
       {
-        "iconUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/icons/refurbishment.svg",
+        "iconUrl": "/assets/icons/refurbishment.svg",
         "title": "Refurbishment"
       },
       {
-        "iconUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/icons/waterproofing.svg",
+        "iconUrl": "/assets/icons/waterproofing.svg",
         "title": "Waterproofing"
       },
       {
-        "iconUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/icons/roofing.svg",
+        "iconUrl": "/assets/icons/roofing.svg",
         "title": "Roofing"
       },
       {
-        "iconUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/icons/gutters.svg",
+        "iconUrl": "/assets/icons/gutters.svg",
         "title": "Gutters"
       },
       {
-        "iconUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/icons/insulation.svg",
+        "iconUrl": "/assets/icons/insulation.svg",
         "title": "Insulation"
       },
       {
-        "iconUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/icons/chromadek.svg",
+        "iconUrl": "/assets/icons/chromadek.svg",
         "title": "Chromadek"
       },
 
       {
-        "iconUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/icons/industrial-roof-coating.svg",
+        "iconUrl": "/assets/icons/industrial-roof-coating.svg",
         "title": "Industrial Roof Coating"
       },
       {
-        "iconUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/icons/asbestos-removal.svg",
+        "iconUrl": "/assets/icons/asbestos-removal.svg",
         "title": "Asbestos removal"
       },
       {
-        "iconUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/icons/leaks.svg",
+        "iconUrl": "/assets/icons/leaks.svg",
         "title": "Leaks"
       }
     ],
     "gallery": [
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/dlh-boksburg/dhl-bboksburg-combined-1.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/brackenfell-jt-ross-ct/IMG_2141.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/avenge-2/DJI_0684.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/dlh-boksburg/dhl-bboksburg-combined-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/diesel-road/DJI_0636.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/douglasdale-shopping-centre/DJI_0334.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/gilwell/example 2/DJI_0417.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/jt-pics/DJI_0645.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/soweto/DJI_0703.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/118/DJI_0496.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/old website/IMG_8285.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/old website/Roof 1.jpg"
+      "/assets/projects/dhl-boksburg/dhl-bboksburg-combined-1.jpg",
+      "/assets/projects/brackenfell-jt-ross-ct/IMG_2141.jpg",
+      "/assets/projects/avenge-2/DJI_0684.jpg",
+      "/assets/projects/dhl-boksburg/dhl-bboksburg-combined-2.jpg",
+      "/assets/projects/diesel-road/DJI_0636.jpg",
+      "/assets/projects/douglasdale-shopping-centre/DJI_0334.jpg",
+      "/assets/projects/gilwell/example 2/DJI_0417.jpg",
+      "/assets/projects/jt-pics/DJI_0645.jpg",
+      "/assets/projects/soweto/DJI_0703.jpg",
+      "/assets/projects/118/DJI_0496.jpg",
+      "/assets/projects/old-website/IMG_8285.jpg",
+      "/assets/projects/old-website/Roof 1.jpg"
     ],
     "contactUs": {
       "phone1": "+27 11 485 1782",
-      "phone2": "+27114851783",
+      "phone2": "+27 11 485 1783",
       "email": "info@roofrefurb.co.za",
       "address": "61 Hathorn Avenue, Rouxville, Johannesburg"
     }
@@ -107,11 +107,11 @@
     "articles": [
       {
         "title": "A&I Sheeting - Protecting your biggest asset",
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/articles/a-i-sheeting-protecting-your-biggest-asset.pdf"
+        "url": "/assets/articles/a-i-sheeting-protecting-your-biggest-asset.pdf"
       },
       {
         "title": "A note from the roof remedial specialist",
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/articles/a-i-sheeting-a-note-from-the-roof-remedial-specialist.pdf"
+        "url": "/assets/articles/a-i-sheeting-a-note-from-the-roof-remedial-specialist.pdf"
       }
     ]
   },
@@ -123,35 +123,35 @@
         "paragraph1": "The over 50-year-old Johnson Tile warehouse has had extensive adjustments and refurbishment done over the last few years by A&I.  The issues ranged from numerous drip leaks across the warehouse during light rains to undersized gutters which overflowed in larger downpours.",
         "paragraph2": "Many of the old undersized box gutters have been replaced with new box gutters which have increased their capacity to hold water by almost double.  Old corroded sheeting replaced, and internal downpipes have been increased and adjusted.",
         "paragraph3": "Sections of the old steel structure have also been raised to allow for new machinery to be installed below. This kind of turnkey refurbishments are all part of the services provided by A&I.",
-        "imageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/slider/johnson-tile.jpg"
+        "imageUrl": "/assets/projects/slider/johnson-tile.jpg"
       },
       {
         "title": "Worldwear",
         "paragraph1": "Worldwear shopping centre, just off Beyers Naude, required extensive gutter maintenance in order to maximise the longevity of its water management system. The system that we installed, which was over 2km long of gutters, will vastly improve the lifespan of the gutter. The roofs' general condition was also assessed and addressed to ensure the client received the most professional service.",
         "paragraph2": "",
         "paragraph3": "",
-        "imageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/slider/worldwear.jpg"
+        "imageUrl": "/assets/projects/slider/worldwear.jpg"
       },
       {
         "title": "Plascon Alberton",
         "paragraph1": "The Plascon Warehouse in Alberton required a conceal-fix roofing system to replace the old Insulpan roof sheets. The old sheets were made up of a composite roof sheet, the composite material was a polyisocyanate, which when burns gives off a cyanide gas which is poisonous to humans. The sheets corroded at end lapse due to the foam insulation retaining water therefore corroding the sheets from inside out. The roof was beyond repair, as well as a health and safety threat, and therefore required a new roofing system. The pitch of the roof and the length of the sheet also meant a conceal-fix system with a blanket insulation was the correct solution.",
         "paragraph2": "",
         "paragraph3": "",
-        "imageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/slider/plascon.jpg"
+        "imageUrl": "/assets/projects/slider/plascon.jpg"
       },
       {
         "title": "Foseco",
         "paragraph1": "We were brought in by a roof remedial specialist engineer at Foseco. Foseco has a highly acidic atmosphere due to the nature of their works. End lapse had been waterproofed by other contractors. This propagated corrosion and therefore our specification called for new sheeting and corrosion control. We provided Foseco with a brand-new roofing solution to replace their warehouses expired metal sheeting. The old metal sheets were in dire need of replacement and beyond refurbishment. We were also able to improve their factories lighting by providing a natural lighting system of polycarbonate sheeting.",
         "paragraph2": "",
         "paragraph3": "",
-        "imageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/slider/foseco.jpg"
+        "imageUrl": "/assets/projects/slider/foseco.jpg"
       },
       {
         "title": "M-Tec",
         "paragraph1": "We were brought in by a roof remedial specialist engineer. M-Tec in Vereeniging suffered from extremely poor maintenance as far as the roof was concerned. A single sheet from bullnose to gutter was the answer for this project. There was also polycarbonate sheeting installed to allow more natural light into the building, this made a vast difference. Not only did this new roofing solution create a greener carbon footprint and solve their leaks, it also improved the morale of the workers in the factory. The lights in the factory were now only used on night shift due to the improved lighting. Steel purlins were also cleaned and recoated to improve the buildings longevity.",
         "paragraph2": "",
         "paragraph3": "",
-        "imageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/slider/m-tec.jpg"
+        "imageUrl": "/assets/projects/slider/m-tec.jpg"
       },
 
       {
@@ -159,42 +159,42 @@
         "paragraph1": "Clearwater mall suffered from over 300 roof leaks due to various reasons; under designed gutters, building extensions, as well as poor detailing and workmanship. This 80 000m² building required extensively engineered changes to correct its design faults.",
         "paragraph2": "Risk and safety were also very high, due to the fully operating shopping centre environment below.",
         "paragraph3": "All these challenges were worked around to bring the centres leaks down to a handful of leaks.",
-        "imageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/slider/clearwater.jpg"
+        "imageUrl": "/assets/projects/slider/clearwater.jpg"
       },
       {
         "title": "Medicross",
         "paragraph1": "We have undertaken major gutter replacements and gutter adjustments to Medicross facilities across the country, including Cape Town, Pietermaritzburg, Pinetown, Krugersdorp, Germiston, Silverton and more..",
         "paragraph2": "Many of these problems were unsolved until extensive design changes were made by A&I.",
         "paragraph3": "",
-        "imageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/slider/medicross.jpg"
+        "imageUrl": "/assets/projects/slider/medicross.jpg"
       },
       {
         "title": "Samancor",
         "paragraph1": "Numerous areas of the Samancor plant in Middelburg have been replaced with Stainless steel sheeting to increase the structures lifespan.",
         "paragraph2": "Much of this work must comply with very high Health and Safety standards, requiring safety lines to be installed, retractable harnesses used as well as working from an elevated platform.",
         "paragraph3": "",
-        "imageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/slider/samancor.jpg"
+        "imageUrl": "/assets/projects/slider/samancor.jpg"
       },
       {
         "title": "Supergroup - Isando",
         "paragraph1": "During the original construction of the Supergroup warehouses in Isando, the roof had been subjected to incorrect installation methods by previous contractors and poor-quality control. The roof remedial project we undertook encompassed reviews of the structure and roofing elements. Most of the works included extensive steel modifications and almost all the flashings to the roof were replaced to meet professional specifications, as they were originally under-sized.",
         "paragraph2": "",
         "paragraph3": "",
-        "imageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/slider/supergroup.jpg"
+        "imageUrl": "/assets/projects/slider/supergroup.jpg"
       },
       {
         "title": "Scaw",
         "paragraph1": "A hot dipped galvanising plant, of which the acidity of the atmosphere was between 17-30%. Roof structure and sheeting had corroded to a point where the building was soon to be condemned. We provided a solution whereby new roof purlins installed were corrosion protected in terms of a polyurethane coating and stainless-steel bolts to connect to structure. An Advanced reinforced fibre glass anti-corrosion sheet was installed which allowed for walk-on capabilities. Its translucent properties also allow for the benefits of natural lighting.",
         "paragraph2": "",
         "paragraph3": "",
-        "imageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/slider/scaw.jpg"
+        "imageUrl": "/assets/projects/slider/scaw.jpg"
       },
       {
         "title": "Tupperware",
         "paragraph1": "The Tupperware manufacturing plant in Springs suffered from poorly corroded gutters and a flat roof structure. There were areas where the gutters could be refurbished and maintained, but in others a whole new gutter had to be installed to rectify the buildings leaks. Wider girth gutters were installed to cope with the large amounts of water we have been experiencing in recent storms and a new roof overlay system was installed in order to provide the appropriate falls to achieve a leak free roof system.",
         "paragraph2": "",
         "paragraph3": "",
-        "imageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/ai-sheeting/projects/slider/tupperware.jpg"
+        "imageUrl": "/assets/projects/slider/tupperware.jpg"
       }
     ],
     "testimonials": [
