@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
-import Testimonials from "@/components/pages/projects-page/testimonials";
-import ProjectsSlider from "@/components/sliders/project-slider";
+import Testimonials from "@/app/_components/pages/projects-page/testimonials";
+import ProjectsSlider from "@/app/_components/sliders/project-slider";
 
-import pageData from "@/data/page-data.json";
+import pageData from "@/app/_data/page-data.json";
 
 const { projectsPage } = pageData;
 

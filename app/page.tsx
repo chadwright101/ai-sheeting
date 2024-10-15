@@ -1,16 +1,18 @@
 import { lazy, Suspense } from "react";
 import { Metadata } from "next";
 
-import AboutUs from "@/components/pages/home-page/about-us";
-import ContactInfo from "@/components/contact/contact-info";
-import Gallery from "@/components/pages/home-page/gallery";
-import SloganStamp from "@/components/pages/home-page/slogan-stamp";
-import VideoHero from "@/components/pages/home-page/video-hero";
-import WhatWeAreAbout from "@/components/pages/home-page/what-we-are-about";
-import ImageContainer from "@/components/utils/image-container";
-import ContactForm from "@/components/contact/contact-form";
+import AboutUs from "@/app/_components/pages/home-page/about-us";
+import ContactInfo from "@/app/_components/contact/contact-info";
+import Gallery from "@/app/_components/pages/home-page/gallery";
+import SloganStamp from "@/app/_components/pages/home-page/slogan-stamp";
+import VideoHero from "@/app/_components/pages/home-page/video-hero";
+import WhatWeAreAbout from "@/app/_components/pages/home-page/what-we-are-about";
+import ImageContainer from "@/app/_components/utils/image-container";
+import ContactForm from "@/app/_components/contact/contact-form";
 
-const LazyContactMap = lazy(() => import("@/components/contact/contact-map"));
+const LazyContactMap = lazy(
+  () => import("@/app/_components/contact/contact-map")
+);
 
 export const metadata: Metadata = {
   title: "Home - A&I Sheeting",
@@ -56,9 +58,9 @@ export default function Home() {
         <ImageContainer
           src="/assets/projects/avenge-2/DJI_0701.jpg"
           alt="A&I Sheeting - What we're about"
-          width={1000}
-          height={450}
-          cssClasses="my-14 h-[250px] object-cover tablet:h-[300px] tabletLarge:hidden"
+          desktopWidth={1000}
+          cssClasses="my-14 h-[250px] object-cover tablet:h-[300px]"
+          pictureCssClasses="tabletLarge:hidden"
         />
       </main>
       <hr className="my-12 text-black tabletLarge:invisible" />

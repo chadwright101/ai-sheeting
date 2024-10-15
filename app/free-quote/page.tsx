@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
-import ContactForm from "@/components/contact/contact-form";
-import ImageContainer from "@/components/utils/image-container";
-import ClientSideImageComponent from "@/components/pages/free-quote/client-side-image-component";
+import ContactForm from "@/app/_components/contact/contact-form";
+import ImageContainer from "@/app/_components/utils/image-container";
+import ClientSideImageComponent from "@/app/_components/pages/free-quote/client-side-image-component";
 
 export const metadata: Metadata = {
   title: "Free Roof Inspection Quote - A&I Sheeting",
@@ -35,17 +35,14 @@ const FreeQuote = () => {
               Please fill in the form below and we&apos;ll get back to you about
               your Free Roof Inspection...
             </p>
-            <ContactForm freeQuote cssClasses="" />
+            <ContactForm freeQuote />
             <ClientSideImageComponent />
           </div>
           <ImageContainer
             src="/assets/projects/old-website/IMG_1151.jpg"
             alt="A&I Sheeting - Free Roof Inspection Quote"
-            height={900}
-            width={750}
-            tabletLarge={80}
-            desktopSmall={80}
-            desktop={80}
+            desktopWidth={750}
+            tabletWidth={750}
             eager
             cssClasses="hidden object-cover h-full w-full tabletLarge:block"
           />

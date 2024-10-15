@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 import { Metadata } from "next";
 
-import Header from "@/components/navigation/header";
+import Header from "@/app/_components/navigation/header";
 
 import "./globals.css";
-import Footer from "@/components/navigation/footer";
-import { GlobalContextProvider } from "@/components/utils/global-context";
+import Footer from "@/app/_components/navigation/footer";
+import { GlobalContextProvider } from "@/app/_components/utils/global-context";
 
 interface Props {
   children: ReactNode;

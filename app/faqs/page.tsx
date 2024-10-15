@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { Metadata } from "next";
 
-import ImageContainer from "@/components/utils/image-container";
+import ImageContainer from "@/app/_components/utils/image-container";
 
-import pageData from "@/data/page-data.json";
+import pageData from "@/app/_data/page-data.json";
 
 const { faqs } = pageData;
 
@@ -45,15 +45,8 @@ const Faqs = () => {
         <ImageContainer
           src="/assets/DSC03266.jpg"
           alt="A&I Sheeting - FAQs"
-          width={1000}
-          height={450}
+          desktopWidth={800}
           cssClasses="h-full object-cover hidden tabletLarge:block"
-          smallest={90}
-          phone={90}
-          tablet={90}
-          tabletLarge={50}
-          desktopSmall={50}
-          desktop={40}
           eager
         />
         <hr className="text-black my-10 tabletLarge:hidden" />

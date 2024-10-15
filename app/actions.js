@@ -1,12 +1,12 @@
 "use server";
 
 import nodemailer from "nodemailer";
-import { emailTemplateHtml } from "@/lib/EmailTemplateHtml";
+import { emailTemplateHtml } from "@/app/_lib/EmailTemplateHtml";
 import express from "express";
 import rateLimit from "express-rate-limit";
 import { sanitize } from "isomorphic-dompurify";
 
-import data from "@/data/page-data.json";
+import data from "@/app/_data/page-data.json";
 
 const app = express();
 

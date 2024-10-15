@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { Metadata } from "next";
 
-import ImageContainer from "@/components/utils/image-container";
+import ImageContainer from "@/app/_components/utils/image-container";
 
-import pageData from "../../data/page-data.json";
+import pageData from "@/app/_data/page-data.json";
 
 const {
   servicesPage: { technologies, guide, articles },
@@ -49,15 +49,10 @@ const Services = () => {
           <ImageContainer
             src="/assets/projects/118/DJI_0496.jpg"
             alt="A&I Sheeting - State of the Art Technologies"
-            width={1200}
-            height={750}
+            desktopWidth={1200}
             cssClasses="h-[250px] tablet:h-[300px] tabletLarge:h-full object-cover my-10 tabletLarge:m-0"
-            smallest={90}
-            phone={90}
-            tablet={90}
-            tabletLarge={50}
-            desktopSmall={40}
-            desktop={40}
+            phoneWidth={425}
+            tabletWidth={800}
             eager
           />
           <p className="col-span-2">{technologies.paragraph2}</p>
@@ -79,15 +74,10 @@ const Services = () => {
           <ImageContainer
             src="/assets/projects/brackenfell-jt-ross-ct/IMG_2162.jpg"
             alt="A&I Sheeting - Product/Service Guide"
-            width={1200}
-            height={750}
+            desktopWidth={1200}
             cssClasses="h-[250px] tablet:h-[300px] tabletLarge:h-full object-cover mt-10 tabletLarge:m-0"
-            smallest={90}
-            phone={90}
-            tablet={90}
-            tabletLarge={50}
-            desktopSmall={40}
-            desktop={40}
+            phoneWidth={425}
+            tabletWidth={800}
           />
         </div>
       </main>
@@ -111,12 +101,9 @@ const Services = () => {
         <ImageContainer
           src="/assets/projects/diesel-road/DJI_0636.jpg"
           alt="A&I Sheeting - Articles"
-          width={1200}
-          height={750}
+          desktopWidth={1200}
           cssClasses="hidden tablet:block tablet:h-[300px] object-cover my-10 tablet:m-0"
-          tabletLarge={50}
-          desktopSmall={45}
-          desktop={40}
+          tabletWidth={800}
         />
       </div>
     </>
