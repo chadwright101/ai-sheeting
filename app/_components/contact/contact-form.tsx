@@ -6,6 +6,7 @@ import Button from "../button";
 import { useGlobalContext } from "../utils/global-context";
 import ImageContainer from "../utils/image-container";
 import classNames from "classnames";
+import { getConfigData } from "@/app/actions";
 
 interface Props {
   cssClasses?: string;
@@ -16,43 +17,75 @@ const ContactForm = ({ cssClasses, freeQuote }: Props) => {
   const { showName, showMessage, setShowName, setShowMessage } =
     useGlobalContext();
   const [showEmailSubmitted, setShowEmailSubmitted] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   const pathName = usePathname();
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setError(null);
+  const handleSubmit = async (formData: FormData) => {
+    const configData = await getConfigData();
 
-    const formData = new FormData(event.currentTarget);
-    const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      message: formData.get("message"),
-      subject: formData.get("subject"),
+    const smtpData = configData?.smtp;
+    const bearerToken = configData?.bearerToken;
+    const apiEndpoint = configData?.apiEndpoint;
+
+    let data: {
+      formData: {
+        email: FormDataEntryValue | null;
+        name: FormDataEntryValue | null;
+        message: FormDataEntryValue | null;
+        subject: FormDataEntryValue | null;
+        honeypot: boolean;
+      };
+      smtpData?: {
+        host: string;
+        port: number;
+        user: string;
+        pass: string;
+        secure: boolean;
+        requireTls: boolean;
+        from: string;
+        to: string;
+      };
+    } = {
+      formData: {
+        email: formData.get("email"),
+        name: formData.get("name"),
+        message: formData.get("message"),
+        subject: formData.get("subject"),
+        honeypot: formData.get("_gotcha") ? true : false,
+      },
+    };
+
+    data = {
+      ...data,
+      smtpData: {
+        host: smtpData.host || "",
+        port: parseInt(smtpData.port as string, 10) || 0,
+        user: smtpData.user || "",
+        pass: smtpData.pass || "",
+        secure: smtpData.secure === "true",
+        requireTls: smtpData.requireTls === "true",
+        from: smtpData.from || "",
+        to: smtpData.to || "",
+      },
     };
 
     try {
-      const response = await fetch("/api/send-email", {
+      const response = await fetch(apiEndpoint!, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "api-email-code": process.env.NEXT_PUBLIC_API_EMAIL_SECRET_CODE || "",
+          Authorization: `Bearer ${bearerToken}`,
         },
         body: JSON.stringify(data),
       });
 
-      if (!response.ok) {
-        throw new Error(`Error: ${response.statusText}`);
-      }
-
-      setShowEmailSubmitted(true);
-    } catch (error) {
-      if (error instanceof Error) {
-        setError(error.message);
+      if (response.ok) {
+        setShowEmailSubmitted(true);
       } else {
-        setError(String(error));
+        console.error("Failed to submit form");
       }
+    } catch (error) {
+      console.error("Error submitting form:", error);
     }
   };
 
@@ -71,7 +104,14 @@ const ContactForm = ({ cssClasses, freeQuote }: Props) => {
         } tabletLarge:mx-0`}
       >
         {!showEmailSubmitted ? (
-          <form onSubmit={handleSubmit} className="flex flex-col gap-8">
+          <form
+            onSubmit={async (e) => {
+              e.preventDefault();
+              const formData = new FormData(e.currentTarget);
+              await handleSubmit(formData);
+            }}
+            className="flex flex-col gap-8"
+          >
             <input type="hidden" name="_gotcha" className="hidden" />
             <input
               type="text"
@@ -167,7 +207,6 @@ const ContactForm = ({ cssClasses, freeQuote }: Props) => {
             </p>
           </div>
         )}
-        {error && <p className="text-red-500">{error}</p>}
       </section>
       <ImageContainer
         src="/assets/projects/old-website/20180720_113017.jpg"
