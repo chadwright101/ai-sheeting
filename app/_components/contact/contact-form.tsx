@@ -2,12 +2,9 @@
 
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-
 import Button from "../button";
 import { useGlobalContext } from "../utils/global-context";
 import ImageContainer from "../utils/image-container";
-import { sendEmail } from "@/app/actions";
-
 import classNames from "classnames";
 
 interface Props {
@@ -19,8 +16,45 @@ const ContactForm = ({ cssClasses, freeQuote }: Props) => {
   const { showName, showMessage, setShowName, setShowMessage } =
     useGlobalContext();
   const [showEmailSubmitted, setShowEmailSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const pathName = usePathname();
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setError(null);
+
+    const formData = new FormData(event.currentTarget);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+      subject: formData.get("subject"),
+    };
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "api-email-code": process.env.NEXT_PUBLIC_API_EMAIL_SECRET_CODE || "",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Error: ${response.statusText}`);
+      }
+
+      setShowEmailSubmitted(true);
+    } catch (error) {
+      if (error instanceof Error) {
+        setError(error.message);
+      } else {
+        setError(String(error));
+      }
+    }
+  };
 
   return (
     <div
@@ -37,13 +71,7 @@ const ContactForm = ({ cssClasses, freeQuote }: Props) => {
         } tabletLarge:mx-0`}
       >
         {!showEmailSubmitted ? (
-          <form
-            action={async (formData) => {
-              await sendEmail(formData);
-              setShowEmailSubmitted(true);
-            }}
-            className="flex flex-col gap-8"
-          >
+          <form onSubmit={handleSubmit} className="flex flex-col gap-8">
             <input type="hidden" name="_gotcha" className="hidden" />
             <input
               type="text"
@@ -139,6 +167,7 @@ const ContactForm = ({ cssClasses, freeQuote }: Props) => {
             </p>
           </div>
         )}
+        {error && <p className="text-red-500">{error}</p>}
       </section>
       <ImageContainer
         src="/assets/projects/old-website/20180720_113017.jpg"
