@@ -69,9 +69,6 @@ const ContactForm = ({ cssClasses, freeQuote }: Props) => {
       },
     };
 
-    console.log(data);
-    console.log(apiEndpoint);
-
     try {
       const response = await fetch(apiEndpoint!, {
         method: "POST",
