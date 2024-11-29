@@ -2,11 +2,13 @@
 
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+
 import Button from "../button";
 import { useGlobalContext } from "../utils/global-context";
 import ImageContainer from "../utils/image-container";
+import { sendEmail } from "@/app/actions";
+
 import classNames from "classnames";
-import { getConfigData } from "@/app/actions";
 
 interface Props {
   cssClasses?: string;
@@ -19,75 +21,6 @@ const ContactForm = ({ cssClasses, freeQuote }: Props) => {
   const [showEmailSubmitted, setShowEmailSubmitted] = useState(false);
 
   const pathName = usePathname();
-
-  const handleSubmit = async (formData: FormData) => {
-    const configData = await getConfigData();
-
-    const smtpData = configData?.smtp;
-    const bearerToken = configData?.bearerToken;
-    const apiEndpoint = configData?.apiEndpoint;
-
-    let data: {
-      formData: {
-        email: FormDataEntryValue | null;
-        name: FormDataEntryValue | null;
-        message: FormDataEntryValue | null;
-        subject: FormDataEntryValue | null;
-        honeypot: boolean;
-      };
-      smtpData?: {
-        host: string;
-        port: number;
-        user: string;
-        pass: string;
-        secure: boolean;
-        requireTls: boolean;
-        from: string;
-        to: string;
-      };
-    } = {
-      formData: {
-        email: formData.get("email"),
-        name: formData.get("name"),
-        message: formData.get("message"),
-        subject: formData.get("subject"),
-        honeypot: formData.get("_gotcha") ? true : false,
-      },
-    };
-
-    data = {
-      ...data,
-      smtpData: {
-        host: smtpData.host || "",
-        port: parseInt(smtpData.port as string, 10) || 0,
-        user: smtpData.user || "",
-        pass: smtpData.pass || "",
-        secure: smtpData.secure === "true",
-        requireTls: smtpData.requireTls === "true",
-        from: smtpData.from || "",
-        to: smtpData.to || "",
-      },
-    };
-
-    try {
-      const response = await fetch(apiEndpoint!, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${bearerToken}`,
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (response.ok) {
-        setShowEmailSubmitted(true);
-      } else {
-        console.error("Failed to submit form");
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-    }
-  };
 
   return (
     <div
@@ -105,10 +38,9 @@ const ContactForm = ({ cssClasses, freeQuote }: Props) => {
       >
         {!showEmailSubmitted ? (
           <form
-            onSubmit={async (e) => {
-              e.preventDefault();
-              const formData = new FormData(e.currentTarget);
-              await handleSubmit(formData);
+            action={async (formData) => {
+              await sendEmail(formData);
+              setShowEmailSubmitted(true);
             }}
             className="flex flex-col gap-8"
           >
