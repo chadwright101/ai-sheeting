@@ -83,7 +83,7 @@
     font-family: "Open_Sans", sans-serif;
     font-size: 16px;
     font-weight: 300;
-    @apply text-black;
+    color: #1E1E1E;
     text-align: justify;
   }
 
@@ -114,19 +114,21 @@
   }
 
   ul {
-    @apply list-disc ml-8;
+    list-style-type: disc;
+    margin-left: 2rem;
   }
 
   ul>ul {
-    @apply list-[square] ml-4;
+    list-style-type: square;
+    margin-left: 1rem;
   }
 
   a {
-    @apply text-linkBlue;
+    color: #3366CC;
   }
 
   a:hover {
-    @apply text-orange;
+    color: #F27C27;
   }
 
 }
