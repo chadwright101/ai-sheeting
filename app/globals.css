@@ -1,6 +1,46 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  /* Reset defaults */
+  --color-*: initial;
+  --breakpoint-*: initial;
+
+  /* Custom Colors */
+  --color-blue: #0C50BE;
+  --color-black: #1E1E1E;
+  --color-orange: #F27C27;
+  --color-white: #FFFFFF;
+  --color-linkBlue: #3366CC;
+
+  /* Font Sizes with Weights (compound properties) */
+  --text-heading: 2rem;
+  --text-heading--font-weight: 700;
+  --text-subheading: 1.125rem;
+  --text-subheading--font-weight: 600;
+  --text-paragraph: 1rem;
+
+  /* Font Weights */
+  --font-weight-200: 200;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+
+  /* Font Families */
+  --font-family-Open_Sans: "Open_Sans", sans-serif;
+  --font-family-Ovo: "Ovo", serif;
+
+  /* Breakpoints (preserve camelCase) */
+  --breakpoint-phone: 425px;
+  --breakpoint-tablet: 800px;
+  --breakpoint-tabletLarge: 1050px;
+  --breakpoint-desktopSmall: 1200px;
+  --breakpoint-desktop: 1450px;
+
+  /* Grid Extension */
+  --grid-template-columns-24: repeat(24, minmax(0, 1fr));
+}
 
 @layer base {
 
@@ -129,6 +169,11 @@
 
   a:hover {
     color: #F27C27;
+  }
+
+  input,
+  textarea {
+    @apply bg-white
   }
 
 }
