@@ -4,7 +4,6 @@ import nodemailer from "nodemailer";
 import { emailTemplateHtml } from "@/app/_lib/EmailTemplateHtml";
 import express from "express";
 import rateLimit from "express-rate-limit";
-import { sanitize } from "isomorphic-dompurify";
 
 import data from "@/app/_data/page-data.json";
 
@@ -22,10 +21,10 @@ export async function sendEmail(formData) {
 
   try {
     if (honey === null) {
-      const subject = sanitize(formData.get("subject"));
-      const name = sanitize(formData.get("name"));
-      const email = sanitize(formData.get("email"));
-      const message = sanitize(formData.get("message"));
+      const subject = formData.get("subject");
+      const name = formData.get("name");
+      const email = formData.get("email");
+      const message = formData.get("message");
 
       const emailHtmlContent = emailTemplateHtml({
         subject,
